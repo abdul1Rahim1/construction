@@ -34,7 +34,7 @@ export default function Services() {
           </div>
           <p className="max-w-md text-ivory/60 leading-relaxed">
             From civic megaprojects to private developments and a premium
-            machinery leasing arm — Griha is engineered to be your single
+            machinery leasing arm — Skandha Constructions is engineered to be your single
             accountable partner.
           </p>
         </div>

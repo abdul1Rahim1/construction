@@ -62,21 +62,21 @@ export const EQUIPMENT = [
     category: "Crawler Dozer",
     specs: ["71-ton class", "610 HP", "22 m³ blade"],
     available: 8,
-    image: "/images/earth_movers/earth_movers2.jpeg",
+    image: "/images/earth_movers/earth_movers2.jpg",
   },
   {
     name: "Volvo L350H Wheel Loader",
     category: "Wheel Loader",
     specs: ["54-ton class", "540 HP", "9.2 m³ bucket"],
     available: 14,
-    image: "/images/earth_movers/earth_movers3.jpeg",
+    image: "/images/earth_movers/earth_movers3.png",
   },
   {
     name: "CAT 24M Motor Grader",
     category: "Motor Grader",
     specs: ["62-ton class", "533 HP", "7.3 m blade"],
     available: 6,
-    image: "/images/earth_movers/earth_movers4.jpeg",
+    image: "/images/earth_movers/earth_movers.jpg",
   },
   {
     name: "Liebherr LTM 1750",
@@ -90,7 +90,7 @@ export const EQUIPMENT = [
     category: "Mining Truck",
     specs: ["296-ton payload", "2,850 HP", "AC drive"],
     available: 10,
-    image: "/images/earth_movers/earth_movers2.jpeg",
+    image: "/images/earth_movers/earth_movers2.jpg",
   },
 ];
 
@@ -160,7 +160,7 @@ export const PROJECTS: Project[] = [
       { label: "Local jobs", value: "1,200+" },
     ],
     quote: {
-      text: "Griha understood that an expressway isn’t just asphalt — it’s the spine of a region’s economy. They delivered with a discipline we rarely see in public works.",
+      text: "Skandha Constructions understood that an expressway isn’t just asphalt — it’s the spine of a region’s economy. They delivered with a discipline we rarely see in public works.",
       author: "Sh. R. Venkatesh",
       role: "Project Director, NHAI",
     },
@@ -206,7 +206,7 @@ export const PROJECTS: Project[] = [
       { label: "Schedule", value: "−21 days" },
     ],
     quote: {
-      text: "Griha delivered our 42-storey tower three weeks ahead of schedule. Their precision and discipline are unmatched in the industry.",
+      text: "Skandha Constructions delivered our 42-storey tower three weeks ahead of schedule. Their precision and discipline are unmatched in the industry.",
       author: "Aarav Mehta",
       role: "CEO, Skyline Developers",
     },
@@ -252,7 +252,7 @@ export const PROJECTS: Project[] = [
       { label: "Downtime", value: "0 days" },
     ],
     quote: {
-      text: "An impossible brief delivered impossibly well. Griha respected our daily operations as much as their own deadlines.",
+      text: "An impossible brief delivered impossibly well. Skandha Constructions respected our daily operations as much as their own deadlines.",
       author: "Cdr. (Retd.) Manoj Pillai",
       role: "Chairman, Chennai Port Authority",
     },
@@ -344,7 +344,7 @@ export const PROJECTS: Project[] = [
       { label: "Appreciation", value: "+22%" },
     ],
     quote: {
-      text: "From the first walkthrough to handover, every interaction felt curated. Griha is the gold standard of construction.",
+      text: "From the first walkthrough to handover, every interaction felt curated. Skandha Constructions is the gold standard of construction.",
       author: "Isabella Cruz",
       role: "Principal Architect, Cruz & Vega",
     },
@@ -400,7 +400,7 @@ export const PROJECTS: Project[] = [
 export const TESTIMONIALS = [
   {
     quote:
-      "Griha delivered our 42-storey tower three weeks ahead of schedule. Their precision and discipline are unmatched in the industry.",
+      "Skandha Constructions delivered our 42-storey tower three weeks ahead of schedule. Their precision and discipline are unmatched in the industry.",
     name: "Aarav Mehta",
     role: "CEO, Skyline Developers",
   },
@@ -418,7 +418,7 @@ export const TESTIMONIALS = [
   },
   {
     quote:
-      "From the first walkthrough to handover, every interaction felt curated. Griha is the gold standard of construction.",
+      "From the first walkthrough to handover, every interaction felt curated. Skandha Constructions is the gold standard of construction.",
     name: "Isabella Cruz",
     role: "Principal Architect, Cruz & Vega",
   },

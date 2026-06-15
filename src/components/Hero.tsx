@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center pt-28 pb-20 overflow-hidden"
+      className="relative min-h-screen flex items-center pt-42 pb-20 overflow-hidden"
     >
       {/* Background image */}
       <div className="absolute inset-0 -z-10">
@@ -60,7 +60,7 @@ export default function Hero() {
               transition={{ duration: 0.7, delay: 0.25 }}
               className="mt-6 max-w-xl text-base sm:text-lg text-charcoal/70 leading-relaxed"
             >
-              Griha Constructions delivers world-class government and private
+              Skandha Constructions Constructions delivers world-class government and private
               projects, backed by a 180-strong fleet of premium earth-moving
               machinery available for lease across the nation.
             </motion.p>
@@ -119,7 +119,7 @@ export default function Hero() {
               <div className="absolute -inset-6 bg-gradient-to-tr from-gold/30 via-transparent to-gold-2/30 blur-2xl rounded-[3rem]" />
               <div className="relative overflow-hidden rounded-[2rem] border border-gold/30 shadow-2xl shadow-charcoal/30">
                 <Image
-                  src="/images/earth_movers/earth_movers4.jpeg"
+                  src="/images/earth_movers/earth_movers.jpg"
                   alt="Earth mover"
                   width={800}
                   height={1000}

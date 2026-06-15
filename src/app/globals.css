@@ -1,16 +1,16 @@
 @import "tailwindcss";
 
 :root {
-  --background: #efe2d0;
-  --foreground: #2a1014;
-  --ivory: #efe2d0;
-  --pearl: #c7b7a3;
-  --gold: #6d2932;
-  --gold-2: #c7b7a3;
-  --gold-deep: #561c24;
-  --charcoal: #561c24;
-  --graphite: #3d141a;
-  --muted: #7a5a52;
+  --background: #f2f6ed;
+  --foreground: #1c2c10;
+  --ivory: #f2f6ed;
+  --pearl: #bdd4a5;
+  --gold: #4a7c2a;
+  --gold-2: #9ec468;
+  --gold-deep: #2d5a16;
+  --charcoal: #2d5a16;
+  --graphite: #1c3c0e;
+  --muted: #607848;
 }
 
 @theme inline {
@@ -62,39 +62,39 @@ body {
 }
 
 .text-gradient-gold {
-  background: linear-gradient(135deg, #8a3a44 0%, #6d2932 50%, #561c24 100%);
+  background: linear-gradient(135deg, #6ba038 0%, #4a7c2a 50%, #2d5a16 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
 .text-gradient-cream {
-  background: linear-gradient(135deg, #efe2d0 0%, #d6c4ad 50%, #c7b7a3 100%);
+  background: linear-gradient(135deg, #f2f6ed 0%, #d8ecca 50%, #bdd4a5 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
 .bg-gradient-gold {
-  background: linear-gradient(135deg, #efe2d0 0%, #dcc9b0 55%, #c7b7a3 100%);
+  background: linear-gradient(135deg, #f2f6ed 0%, #dbeacc 55%, #bdd4a5 100%);
 }
 
 .bg-gradient-wine {
-  background: linear-gradient(135deg, #8a3a44 0%, #6d2932 50%, #561c24 100%);
+  background: linear-gradient(135deg, #6ba038 0%, #4a7c2a 50%, #2d5a16 100%);
 }
 
 .glass {
-  background: rgba(239, 226, 208, 0.65);
+  background: rgba(242, 246, 237, 0.65);
   backdrop-filter: blur(14px) saturate(160%);
   -webkit-backdrop-filter: blur(14px) saturate(160%);
-  border: 1px solid rgba(109, 41, 50, 0.18);
+  border: 1px solid rgba(74, 124, 42, 0.18);
 }
 
 .glass-dark {
-  background: rgba(86, 28, 36, 0.55);
+  background: rgba(45, 90, 22, 0.55);
   backdrop-filter: blur(14px) saturate(160%);
   -webkit-backdrop-filter: blur(14px) saturate(160%);
-  border: 1px solid rgba(199, 183, 163, 0.25);
+  border: 1px solid rgba(189, 212, 165, 0.25);
 }
 
 .shine { position: relative; overflow: hidden; }
@@ -111,14 +111,14 @@ body {
 
 .hero-grid {
   background-image:
-    linear-gradient(rgba(109,41,50,0.10) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(109,41,50,0.10) 1px, transparent 1px);
+    linear-gradient(rgba(74,124,42,0.10) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(74,124,42,0.10) 1px, transparent 1px);
   background-size: 60px 60px;
   mask-image: radial-gradient(ellipse at center, black 40%, transparent 75%);
 }
 
 .hairline {
-  background: linear-gradient(90deg, transparent, rgba(199,183,163,0.7), transparent);
+  background: linear-gradient(90deg, transparent, rgba(189,212,165,0.7), transparent);
 }
 
 @keyframes floaty {

@@ -17,7 +17,7 @@ export default function CTA() {
         >
           <div className="absolute inset-0 -z-10 opacity-30">
             <Image
-              src="/images/earth_movers/earth_movers2.jpeg"
+              src="/images/earth_movers/earth_movers2.jpg"
               alt=""
               fill
               className="object-cover"

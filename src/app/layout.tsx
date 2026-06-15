@@ -17,11 +17,11 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Griha Constructions — Building Legacies, Moving Earth",
+  title: "Skandha Constructions Constructions — Building Legacies, Moving Earth",
   description:
-    "Griha Constructions delivers world-class government & private construction projects and large-scale earth mover leasing across the nation.",
+    "Skandha Constructions Constructions delivers world-class government & private construction projects and large-scale earth mover leasing across the nation.",
   keywords: [
-    "Griha Constructions",
+    "Skandha Constructions Constructions",
     "construction company",
     "earth movers",
     "heavy equipment leasing",

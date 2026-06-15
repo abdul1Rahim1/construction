@@ -18,7 +18,7 @@ export default function Footer() {
                 <HardHat className="h-5 w-5 text-charcoal" strokeWidth={2.4} />
               </span>
               <span className="font-display text-2xl">
-                Griha<span className="text-gradient-cream"> .</span>
+                Skandha Constructions<span className="text-gradient-cream"> .</span>
               </span>
             </Link>
             <p className="mt-6 text-ivory/65 max-w-md leading-relaxed">
@@ -67,7 +67,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-4 w-4 text-gold flex-shrink-0" />
-                hello@grihaconstructions.com
+                hello@Skandha Constructionsconstructions.com
               </li>
             </ul>
 
@@ -91,7 +91,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-16 pt-8 border-t border-ivory/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-ivory/50">
-          <p>© {new Date().getFullYear()} Griha Constructions. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Skandha Constructions Constructions. All rights reserved.</p>
           <div className="flex items-center gap-6">
             <a href="#" className="hover:text-gold-2 transition">Privacy</a>
             <a href="#" className="hover:text-gold-2 transition">Terms</a>

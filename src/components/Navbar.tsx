@@ -1,9 +1,10 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, HardHat } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { NAV_LINKS } from "@/lib/data";
 
 export default function Navbar() {
@@ -20,9 +21,7 @@ export default function Navbar() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled
-          ? "py-2"
-          : "py-4"
+        scrolled ? "py-2" : "py-4"
       }`}
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -34,15 +33,14 @@ export default function Navbar() {
           }`}
         >
           <Link href="#home" className="flex items-center gap-2 group">
-            <span className="relative inline-flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-gold shadow-md">
-              <HardHat className="h-5 w-5 text-charcoal" strokeWidth={2.4} />
-            </span>
-            <span className="font-display text-xl sm:text-2xl tracking-tight">
-              Griha<span className="text-gradient-gold"> .</span>
-              <span className="text-muted text-sm font-sans tracking-[0.25em] uppercase ml-1">
-                Constructions
-              </span>
-            </span>
+            <Image
+              src="/images/logo1.png"
+              alt="Skandha Constructions"
+              width={160}
+              height={48}
+              className="h-24 w-48 object-contain mix-blend-multiply"
+              priority
+            />
           </Link>
 
           <nav className="hidden lg:flex items-center gap-1">

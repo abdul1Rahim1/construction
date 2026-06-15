@@ -19,7 +19,7 @@ export default function About() {
           >
             <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] border border-gold/20 shadow-2xl">
               <Image
-                src="/images/earth_movers/earth_movers3.jpeg"
+                src="/images/earth_movers/earth_movers3.png"
                 alt="Construction team"
                 fill
                 className="object-cover"
@@ -42,13 +42,13 @@ export default function About() {
           >
             <span className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.3em] text-gold-deep">
               <span className="h-px w-8 bg-gold" />
-              About Griha
+              About Skandha Constructions
             </span>
             <h2 className="font-display mt-4 text-4xl sm:text-5xl lg:text-6xl leading-tight">
               Three decades of <span className="text-gradient-gold italic">precision,</span> scale & trust.
             </h2>
             <p className="mt-6 text-base sm:text-lg text-charcoal/70 leading-relaxed">
-              Founded in 1996, Griha Constructions has grown into one of the
+              Founded in 1996, Skandha Constructions Constructions has grown into one of the
               nation’s most respected names in heavy infrastructure. We pair
               old-world craftsmanship with cutting-edge engineering — delivering
               landmark projects for governments and private giants alike, while
