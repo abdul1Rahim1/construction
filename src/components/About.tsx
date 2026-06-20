@@ -19,17 +19,17 @@ export default function About() {
           >
             <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] border border-gold/20 shadow-2xl">
               <Image
-                src="/images/earth_movers/earth_movers3.png"
-                alt="Construction team"
+                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80"
+                alt="Karuppusamy Udhayakumar — Founder, Skandha Constructions"
                 fill
                 className="object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-charcoal/40 to-transparent" />
             </div>
             <div className="absolute -bottom-8 -right-4 sm:-right-12 glass rounded-2xl p-6 shadow-2xl max-w-xs">
-              <p className="font-display text-4xl text-gradient-gold">1996</p>
+              <p className="font-display text-4xl text-gradient-gold">14+</p>
               <p className="text-sm text-charcoal/70 mt-1">
-                Founded with a single excavator and an uncompromising vision.
+                Years of excellence in civil &amp; structural construction.
               </p>
             </div>
           </motion.div>
@@ -45,15 +45,21 @@ export default function About() {
               About Skandha Constructions
             </span>
             <h2 className="font-display mt-4 text-4xl sm:text-5xl lg:text-6xl leading-tight">
-              Three decades of <span className="text-gradient-gold italic">precision,</span> scale & trust.
+              14+ years of <span className="text-gradient-gold italic">precision,</span> scale &amp; trust.
             </h2>
-            <p className="mt-6 text-base sm:text-lg text-charcoal/70 leading-relaxed">
-              Founded in 1996, Skandha Constructions Constructions has grown into one of the
-              nation’s most respected names in heavy infrastructure. We pair
-              old-world craftsmanship with cutting-edge engineering — delivering
-              landmark projects for governments and private giants alike, while
-              operating one of the largest premium earth-mover fleets in the
-              region.
+            <p className="mt-2 text-sm font-semibold text-gold-deep tracking-wide">
+              Led by Karuppusamy Udhayakumar
+            </p>
+            <p className="mt-4 text-base sm:text-lg text-charcoal/70 leading-relaxed">
+              Founded with a vision to deliver world-class construction services, Skandha Constructions
+              has grown into one of the region&apos;s most trusted names in civil and structural
+              construction, backed by a 180+ strong fleet of earth-moving machinery.
+            </p>
+            <p className="mt-4 text-sm text-charcoal/60 leading-relaxed">
+              Our work spans government infrastructure, private developments, and large-scale
+              industrial projects. Through our sister brand{" "}
+              <span className="font-semibold" style={{ color: "#f5a623" }}>DiyaDev Developers</span>,
+              we also deliver quality residential and commercial real estate across the region.
             </p>
 
             <div className="mt-10 grid sm:grid-cols-2 gap-6">

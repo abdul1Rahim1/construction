@@ -10,10 +10,14 @@ import Process from "@/components/Process";
 import Testimonials from "@/components/Testimonials";
 import CTA from "@/components/CTA";
 import Contact from "@/components/Contact";
+import DiyaDev from "@/components/DiyaDev";
+import SocialSidebar from "@/components/SocialSidebar";
+import Chatbot from "@/components/Chatbot";
 
 export default function Home() {
   return (
     <>
+      <SocialSidebar />
       <Hero />
       <Marquee />
       <About />
@@ -24,8 +28,10 @@ export default function Home() {
       <Gallery />
       <Process />
       <Testimonials />
+      <DiyaDev />
       <CTA />
       <Contact />
+      <Chatbot />
     </>
   );
 }

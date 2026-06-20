@@ -10,10 +10,12 @@ export const NAV_LINKS = [
 ];
 
 export const STATS = [
-  { value: 28, suffix: "+", label: "Years of Excellence" },
-  { value: 420, suffix: "+", label: "Projects Delivered" },
-  { value: 180, suffix: "+", label: "Earth Movers in Fleet" },
-  { value: 96, suffix: "%", label: "Repeat Clients" },
+  { value: 14, suffix: "+", label: "Years of Experience", icon: "🏗️" },
+  { value: 10, suffix: "", label: "Architects", icon: "📐" },
+  { value: 4, suffix: "", label: "Engineers", icon: "⚙️" },
+  { value: 40, suffix: "+", label: "Skilled Labourers", icon: "👷" },
+  { value: 420, suffix: "+", label: "Projects Delivered", icon: "🏢" },
+  { value: 180, suffix: "+", label: "Equipment Fleet", icon: "🚜" },
 ];
 
 export const SERVICES = [
@@ -455,5 +457,120 @@ export const PROCESS = [
     step: "04",
     title: "Build & Handover",
     desc: "Transparent reporting, weekly walkthroughs, and a polished handover that exceeds expectations.",
+  },
+];
+
+// ─── NEW: Portfolio Projects for Residential & Commercial tabs ───────────────
+
+export type PortfolioStatus = "Ongoing" | "Completed";
+
+export type PortfolioProject = {
+  id: number;
+  name: string;
+  location: string;
+  type: string;
+  status: PortfolioStatus;
+  image: string;
+};
+
+export const RESIDENTIAL_PROJECTS: PortfolioProject[] = [
+  {
+    id: 1,
+    name: "Sakthi Nagar Villas",
+    location: "Coimbatore, Tamil Nadu",
+    type: "Independent Villas",
+    status: "Completed",
+    image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80",
+  },
+  {
+    id: 2,
+    name: "Green Valley Apartments",
+    location: "Chennai, Tamil Nadu",
+    type: "Apartment Complex",
+    status: "Ongoing",
+    image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80",
+  },
+  {
+    id: 3,
+    name: "Lakeside Homes Phase 1",
+    location: "Salem, Tamil Nadu",
+    type: "Row Houses",
+    status: "Completed",
+    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
+  },
+  {
+    id: 4,
+    name: "Sunrise Residency",
+    location: "Madurai, Tamil Nadu",
+    type: "Multi-Storey Apartments",
+    status: "Ongoing",
+    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+  },
+  {
+    id: 5,
+    name: "Palm Garden Phase 2",
+    location: "Erode, Tamil Nadu",
+    type: "Gated Community Villas",
+    status: "Ongoing",
+    image: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80",
+  },
+  {
+    id: 6,
+    name: "Elite Towers",
+    location: "Trichy, Tamil Nadu",
+    type: "High-Rise Apartments",
+    status: "Completed",
+    image: "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?auto=format&fit=crop&w=800&q=80",
+  },
+];
+
+export const COMMERCIAL_PROJECTS: PortfolioProject[] = [
+  {
+    id: 1,
+    name: "Coimbatore Tech Hub",
+    location: "Coimbatore, Tamil Nadu",
+    type: "IT Office Complex",
+    status: "Completed",
+    image: "https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=800&q=80",
+  },
+  {
+    id: 2,
+    name: "Chennai Business Centre",
+    location: "Chennai, Tamil Nadu",
+    type: "Commercial Complex",
+    status: "Ongoing",
+    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80",
+  },
+  {
+    id: 3,
+    name: "Trichy Trade Tower",
+    location: "Trichy, Tamil Nadu",
+    type: "Office Tower",
+    status: "Completed",
+    image: "https://images.unsplash.com/photo-1464082354059-27db6ce50048?auto=format&fit=crop&w=800&q=80",
+  },
+  {
+    id: 4,
+    name: "Salem Mall Complex",
+    location: "Salem, Tamil Nadu",
+    type: "Retail & Mall",
+    status: "Ongoing",
+    image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80",
+  },
+  {
+    id: 5,
+    name: "Hosur Industrial Park",
+    location: "Hosur, Tamil Nadu",
+    type: "Industrial Warehouse",
+    status: "Completed",
+    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80",
+  },
+  {
+    id: 6,
+    name: "Bangalore IT Park Phase 1",
+    location: "Bangalore, Karnataka",
+    type: "IT Park",
+    status: "Completed",
+    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80",
   },
 ];

@@ -47,7 +47,7 @@ export default function Stats() {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 lg:gap-4">
           {STATS.map((s, i) => (
             <motion.div
               key={s.label}
@@ -57,8 +57,9 @@ export default function Stats() {
               transition={{ duration: 0.5, delay: i * 0.08 }}
               className="text-center px-2"
             >
+              <div className="text-3xl mb-2">{s.icon}</div>
               <Counter value={s.value} suffix={s.suffix} />
-              <p className="mt-3 text-sm sm:text-base text-charcoal/60 uppercase tracking-widest">
+              <p className="mt-2 text-xs sm:text-sm text-charcoal/60 uppercase tracking-widest leading-snug">
                 {s.label}
               </p>
             </motion.div>

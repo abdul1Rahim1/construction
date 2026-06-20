@@ -3,6 +3,9 @@
 import { motion } from "framer-motion";
 import { ArrowRight, PlayCircle, ShieldCheck, Award, Users } from "lucide-react";
 import Image from "next/image";
+import dynamic from "next/dynamic";
+
+const ThreeParticles = dynamic(() => import("./ThreeParticles"), { ssr: false });
 
 export default function Hero() {
   return (
@@ -26,12 +29,15 @@ export default function Hero() {
       {/* Decorative grid */}
       <div className="absolute inset-0 -z-10 hero-grid opacity-70" />
 
+      {/* Three.js particle background */}
+      <ThreeParticles />
+
       {/* Floating gold orb */}
       <div className="absolute -top-32 -right-32 h-[480px] w-[480px] rounded-full bg-gradient-to-br from-gold-2/40 to-gold/10 blur-3xl -z-10" />
       <div className="absolute bottom-0 left-1/2 h-[300px] w-[600px] -translate-x-1/2 rounded-full bg-gold/10 blur-3xl -z-10" />
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full">
-        <div className="grid lg:grid-cols-12 gap-12 items-center">
+          <div className="grid lg:grid-cols-12 gap-12 items-center justify-center">
           <div className="lg:col-span-7">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -108,47 +114,7 @@ export default function Hero() {
             </motion.div>
           </div>
 
-          {/* Right floating card */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            className="lg:col-span-5 relative"
-          >
-            <div className="relative animate-floaty">
-              <div className="absolute -inset-6 bg-gradient-to-tr from-gold/30 via-transparent to-gold-2/30 blur-2xl rounded-[3rem]" />
-              <div className="relative overflow-hidden rounded-[2rem] border border-gold/30 shadow-2xl shadow-charcoal/30">
-                <Image
-                  src="/images/earth_movers/earth_movers.jpg"
-                  alt="Earth mover"
-                  width={800}
-                  height={1000}
-                  className="h-[480px] sm:h-[560px] w-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-charcoal/90 via-charcoal/10 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8 text-ivory">
-                  <p className="text-xs uppercase tracking-[0.3em] text-gold-2">
-                    Featured Fleet
-                  </p>
-                  <h3 className="font-display text-2xl sm:text-3xl mt-2">
-                    CAT 390F Excavator
-                  </h3>
-                  <p className="text-sm text-ivory/70 mt-1">
-                    90-ton class · Available for lease
-                  </p>
-                </div>
-              </div>
 
-              <div className="absolute -bottom-6 -left-6 glass rounded-2xl p-4 shadow-xl hidden sm:block">
-                <p className="text-2xl font-display text-gradient-gold">28+ yrs</p>
-                <p className="text-xs text-charcoal/70">Industry experience</p>
-              </div>
-              <div className="absolute -top-4 -right-4 glass rounded-2xl p-4 shadow-xl hidden sm:block">
-                <p className="text-2xl font-display text-gradient-gold">420+</p>
-                <p className="text-xs text-charcoal/70">Projects delivered</p>
-              </div>
-            </div>
-          </motion.div>
         </div>
       </div>
     </section>
