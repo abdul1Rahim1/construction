@@ -3,6 +3,9 @@
 import { motion } from "framer-motion";
 import { ArrowRight, PlayCircle, ShieldCheck, Award, Users } from "lucide-react";
 import Image from "next/image";
+import dynamic from "next/dynamic";
+
+const ThreeParticles = dynamic(() => import("./ThreeParticles"), { ssr: false });
 
 export default function Hero() {
   return (
@@ -25,6 +28,9 @@ export default function Hero() {
 
       {/* Decorative grid */}
       <div className="absolute inset-0 -z-10 hero-grid opacity-70" />
+
+      {/* Three.js particle background */}
+      <ThreeParticles />
 
       {/* Floating gold orb */}
       <div className="absolute -top-32 -right-32 h-[480px] w-[480px] rounded-full bg-gradient-to-br from-gold-2/40 to-gold/10 blur-3xl -z-10" />
