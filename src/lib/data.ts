@@ -402,7 +402,7 @@ export const RESIDENTIAL_PROJECTS: PortfolioProject[] = [
     location: "Chennai, Tamil Nadu",
     type: "Apartment Complex",
     status: "Ongoing",
-    image: "https://images.unsplash.com/photo-1590644365607-1c5a92909f6f?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.pexels.com/photos/1463917/pexels-photo-1463917.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
     id: 3,
@@ -426,7 +426,7 @@ export const RESIDENTIAL_PROJECTS: PortfolioProject[] = [
     location: "Erode, Tamil Nadu",
     type: "Gated Community Villas",
     status: "Ongoing",
-    image: "https://images.unsplash.com/photo-1541976590-713941681591?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.pexels.com/photos/27907084/pexels-photo-27907084.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
     id: 6,
@@ -469,7 +469,7 @@ export const COMMERCIAL_PROJECTS: PortfolioProject[] = [
     location: "Salem, Tamil Nadu",
     type: "Retail & Mall",
     status: "Ongoing",
-    image: "https://images.unsplash.com/photo-1516156008625-3a9d6067fab5?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.pexels.com/photos/12335028/pexels-photo-12335028.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
     id: 5,
@@ -487,4 +487,33 @@ export const COMMERCIAL_PROJECTS: PortfolioProject[] = [
     status: "Completed",
     image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80",
   },
+];
+
+export type ProgressPhoto = { src: string; alt: string };
+
+export const CONSTRUCTION_PROGRESS_GALLERY: ProgressPhoto[] = [
+  { src: "https://images.pexels.com/photos/20339280/pexels-photo-20339280.jpeg?auto=compress&cs=tinysrgb&w=800", alt: "Rebar reinforcement mesh laid across a foundation slab" },
+  { src: "https://images.pexels.com/photos/2209529/pexels-photo-2209529.jpeg?auto=compress&cs=tinysrgb&w=800", alt: "Workers on scaffolding renovating a building facade" },
+  { src: "https://images.pexels.com/photos/33761494/pexels-photo-33761494.jpeg?auto=compress&cs=tinysrgb&w=800", alt: "Construction workers resting on scaffolding" },
+  { src: "https://images.pexels.com/photos/29174068/pexels-photo-29174068.jpeg?auto=compress&cs=tinysrgb&w=800", alt: "Silhouette of construction cranes against a dusk sky" },
+  { src: "https://images.pexels.com/photos/2934280/pexels-photo-2934280.jpeg?auto=compress&cs=tinysrgb&w=800", alt: "Tower cranes rising above the city skyline" },
+  { src: "https://images.pexels.com/photos/5923872/pexels-photo-5923872.jpeg?auto=compress&cs=tinysrgb&w=800", alt: "Rebar-lined construction site beside a high-rise tower" },
+  { src: "https://images.pexels.com/photos/7168457/pexels-photo-7168457.jpeg?auto=compress&cs=tinysrgb&w=800", alt: "High-rise building under construction with a tower crane" },
+  { src: "https://images.pexels.com/photos/13098128/pexels-photo-13098128.jpeg?auto=compress&cs=tinysrgb&w=800", alt: "Excavator clearing ground at a construction site" },
+  { src: "https://images.pexels.com/photos/30354001/pexels-photo-30354001.jpeg?auto=compress&cs=tinysrgb&w=800", alt: "Excavator digging at a construction site" },
+  { src: "https://images.pexels.com/photos/34911458/pexels-photo-34911458.jpeg?auto=compress&cs=tinysrgb&w=800", alt: "Building under construction silhouetted at dusk with a crane" },
+  { src: "https://images.pexels.com/photos/31268433/pexels-photo-31268433.jpeg?auto=compress&cs=tinysrgb&w=800", alt: "Cluster of tower cranes above the city skyline" },
+  { src: "https://images.pexels.com/photos/17909242/pexels-photo-17909242.jpeg?auto=compress&cs=tinysrgb&w=800", alt: "Cranes working at an urban construction site" },
+  { src: "https://images.pexels.com/photos/27809521/pexels-photo-27809521.jpeg?auto=compress&cs=tinysrgb&w=800", alt: "Aerial view of a city construction site with cranes" },
+  { src: "https://images.pexels.com/photos/4513940/pexels-photo-4513940.jpeg?auto=compress&cs=tinysrgb&w=800", alt: "Tower cranes used in building construction" },
+  { src: "https://images.pexels.com/photos/12454406/pexels-photo-12454406.jpeg?auto=compress&cs=tinysrgb&w=800", alt: "Aerial view of a construction site with a crane near buildings" },
+  { src: "https://images.pexels.com/photos/8961034/pexels-photo-8961034.jpeg?auto=compress&cs=tinysrgb&w=800", alt: "Workers in PPE discussing plans at a construction site" },
+  { src: "https://images.pexels.com/photos/8491085/pexels-photo-8491085.jpeg?auto=compress&cs=tinysrgb&w=800", alt: "Timber roof frame under construction" },
+  { src: "https://images.pexels.com/photos/11692850/pexels-photo-11692850.jpeg?auto=compress&cs=tinysrgb&w=800", alt: "Scaffolding wrapped in protective tarpaulin" },
+  { src: "https://images.pexels.com/photos/35807066/pexels-photo-35807066.jpeg?auto=compress&cs=tinysrgb&w=800", alt: "Building fully wrapped in scaffolding during renovation" },
+  { src: "https://images.pexels.com/photos/4692281/pexels-photo-4692281.jpeg?auto=compress&cs=tinysrgb&w=800", alt: "Brick extension under construction on a house" },
+  { src: "https://images.pexels.com/photos/10202865/pexels-photo-10202865.jpeg?auto=compress&cs=tinysrgb&w=800", alt: "Construction workers assembling rebar formwork" },
+  { src: "https://images.pexels.com/photos/13890649/pexels-photo-13890649.jpeg?auto=compress&cs=tinysrgb&w=800", alt: "Workers on scaffolding among rebar columns" },
+  { src: "https://images.pexels.com/photos/18355812/pexels-photo-18355812.jpeg?auto=compress&cs=tinysrgb&w=800", alt: "Construction worker on scaffolding at a high-rise site" },
+  { src: "https://images.pexels.com/photos/14539151/pexels-photo-14539151.jpeg?auto=compress&cs=tinysrgb&w=800", alt: "Construction worker welding a steel beam" },
 ];
