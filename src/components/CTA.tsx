@@ -47,10 +47,10 @@ export default function CTA() {
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </a>
               <a
-                href="tel:+918040001996"
+                href="tel:+919865460607"
                 className="inline-flex items-center gap-2 rounded-full border border-ivory/20 px-7 py-4 text-sm font-medium text-ivory hover:bg-ivory/5 transition"
               >
-                Call +91 80 4000 1996
+                Call +91 98654 60607
               </a>
             </div>
           </div>

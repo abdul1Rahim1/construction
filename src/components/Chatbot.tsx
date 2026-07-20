@@ -64,13 +64,13 @@ function getResponse(input: string): string {
     return "Skandha Constructions is led by Karuppusamy Udhayakumar with 14+ years of experience in the construction industry, delivering trusted projects across Tamil Nadu.";
 
   if (/real.?estate|property|diya|diyadev|developer/i.test(msg))
-    return "DiyaDev Developers is our real estate arm! 🏠\n\nWe offer residential properties (2BHK, 3BHK, villas) and commercial spaces. Scroll to the DiyaDev section below or call +91 90873 53637 for current listings.";
+    return "DiyaDev Developers is our real estate arm! 🏠\n\nWe offer residential properties (2BHK, 3BHK, villas) and commercial spaces. Scroll to the DiyaDev section below or call +91 98654 60607 for current listings.";
 
   if (/contact|phone|call|whatsapp|number|address|email|location/i.test(msg))
-    return "📞 Call/WhatsApp: +91 90873 53637\n📧 Email: hello@skandhaconstructions.com\n📍 Address: 12 Brigade Road, Bengaluru\n\n💬 WhatsApp chat: https://wa.me/919087353637";
+    return "📞 Call/WhatsApp: +91 98654 60607\n📧 Email: skandhaconstructions@yahoo.com\n📍 Address: 28, Siva Sakthi Colony, Kuruchi, SIDCO Post, Coimbatore, Tamil Nadu, 641021\n\n💬 WhatsApp chat: https://wa.me/919865460607";
 
   if (/quote|price|cost|rate|estimate|charge|fee/i.test(msg))
-    return "We provide custom quotes tailored to your project scope, timeline, and location. Please contact us directly at +91 90873 53637 or fill out the Contact form for a detailed estimate.";
+    return "We provide custom quotes tailored to your project scope, timeline, and location. Please contact us directly at +91 98654 60607 or fill out the Contact form for a detailed estimate.";
 
   return "I can help you with:\n• 🏗️ Construction Services\n• 🏢 Completed Projects\n• 🏠 DiyaDev Properties\n• 📞 Contact Information\n\nWhat would you like to know?";
 }

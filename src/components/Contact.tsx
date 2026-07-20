@@ -33,9 +33,9 @@ export default function Contact() {
 
             <div className="mt-10 space-y-5">
               {[
-                { icon: Phone, label: "Call us", value: "+91 80 4000 1996" },
-                { icon: Mail, label: "Email", value: "hello@skandhaconstructions.com" },
-                { icon: MapPin, label: "Headquarters", value: "12 Brigade Road, Bengaluru, IN" },
+                { icon: Phone, label: "Call us", value: "+91 98654 60607" },
+                { icon: Mail, label: "Email", value: "skandhaconstructions@yahoo.com" },
+                { icon: MapPin, label: "Headquarters", value: "28, Siva Sakthi Colony, Kuruchi, SIDCO Post, Coimbatore, Tamil Nadu, 641021" },
               ].map((c) => (
                 <div key={c.label} className="flex items-start gap-4">
                   <div className="h-12 w-12 rounded-2xl bg-gradient-gold flex items-center justify-center flex-shrink-0 shadow-lg">
