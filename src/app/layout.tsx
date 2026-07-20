@@ -19,15 +19,19 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Skandha Constructions Constructions — Building Legacies, Moving Earth",
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL || "https://skandhaconstructions.com"
+  ),
+  title: "Skandha Constructions — Building Legacies, Building Trust",
   description:
-    "Skandha Constructions Constructions delivers world-class government & private construction projects and large-scale earth mover leasing across the nation.",
+    "Skandha Constructions delivers world-class government and private construction projects — from marriage halls and commercial complexes to public infrastructure — across Tamil Nadu.",
   keywords: [
-    "Skandha Constructions Constructions",
+    "Skandha Constructions",
     "construction company",
-    "earth movers",
-    "heavy equipment leasing",
     "government projects",
+    "commercial construction",
+    "residential construction",
+    "marriage hall construction",
     "infrastructure",
   ],
 };

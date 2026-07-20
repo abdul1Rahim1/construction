@@ -1,8 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Heart, MessageCircle, Send, Compass, Menu } from "lucide-react";
+import { Heart, MessageCircle, Compass, Menu } from "lucide-react";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function FeedHeader() {
   const [showMenu, setShowMenu] = useState(false);
@@ -52,11 +53,12 @@ export default function FeedHeader() {
             </nav>
 
             {/* Profile Button */}
-            <button className="w-10 h-10 rounded-full bg-gradient-to-br from-purple-400 to-pink-500 flex items-center justify-center">
-              <img
+            <button className="relative w-10 h-10 rounded-full bg-gradient-to-br from-purple-400 to-pink-500 flex items-center justify-center overflow-hidden">
+              <Image
                 src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=40&h=40&fit=crop"
                 alt="Profile"
-                className="w-full h-full rounded-full object-cover"
+                fill
+                className="rounded-full object-cover"
               />
             </button>
           </div>

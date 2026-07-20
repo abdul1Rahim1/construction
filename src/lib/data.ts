@@ -2,7 +2,6 @@ export const NAV_LINKS = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
   { label: "Services", href: "#services" },
-  { label: "Equipment", href: "#equipment" },
   { label: "Projects", href: "#projects" },
   { label: "Gallery", href: "#gallery" },
   { label: "Testimonials", href: "#testimonials" },
@@ -13,88 +12,9 @@ export const NAV_LINKS = [
 export const STATS = [
   { value: 14, suffix: "+", label: "Years of Experience", icon: "🏗️" },
   { value: 10, suffix: "", label: "Architects", icon: "📐" },
-  { value: 4, suffix: "", label: "Engineers", icon: "⚙️" },
-  { value: 40, suffix: "+", label: "Skilled Labourers", icon: "👷" },
-  { value: 420, suffix: "+", label: "Projects Delivered", icon: "🏢" },
-  { value: 180, suffix: "+", label: "Equipment Fleet", icon: "🚜" },
-];
-
-export const SERVICES = [
-  {
-    title: "Government Infrastructure",
-    desc: "Highways, bridges, public buildings and large-scale civic infrastructure built to the highest national standards.",
-    icon: "Landmark",
-  },
-  {
-    title: "Private & Commercial Builds",
-    desc: "Premium commercial complexes, industrial facilities, and bespoke private developments delivered on time.",
-    icon: "Building2",
-  },
-  {
-    title: "Earth Mover Leasing",
-    desc: "A 180+ strong fleet of excavators, bulldozers, loaders and graders available for daily, monthly and project leases.",
-    icon: "Truck",
-  },
-  {
-    title: "Site Preparation & Excavation",
-    desc: "End-to-end site clearance, grading, and large-scale excavation engineered for any terrain.",
-    icon: "Mountain",
-  },
-  {
-    title: "Project Management",
-    desc: "Senior PMs orchestrate timelines, vendors and compliance — full accountability from blueprint to handover.",
-    icon: "Briefcase",
-  },
-  {
-    title: "Sustainable Engineering",
-    desc: "LEED-aligned designs, low-emission machinery and waste-reduction protocols on every job site.",
-    icon: "Leaf",
-  },
-];
-
-export const EQUIPMENT = [
-  {
-    name: "CAT 390F Excavator",
-    category: "Heavy Excavator",
-    specs: ["90-ton class", "1,150 HP", "5.0 m³ bucket"],
-    available: 12,
-    image: "/images/earth_movers/earth_movers1.jpeg",
-  },
-  {
-    name: "Komatsu D375A Bulldozer",
-    category: "Crawler Dozer",
-    specs: ["71-ton class", "610 HP", "22 m³ blade"],
-    available: 8,
-    image: "/images/earth_movers/earth_movers2.jpg",
-  },
-  {
-    name: "Volvo L350H Wheel Loader",
-    category: "Wheel Loader",
-    specs: ["54-ton class", "540 HP", "9.2 m³ bucket"],
-    available: 14,
-    image: "/images/earth_movers/earth_movers3.png",
-  },
-  {
-    name: "CAT 24M Motor Grader",
-    category: "Motor Grader",
-    specs: ["62-ton class", "533 HP", "7.3 m blade"],
-    available: 6,
-    image: "/images/earth_movers/earth_movers.jpg",
-  },
-  {
-    name: "Liebherr LTM 1750",
-    category: "Mobile Crane",
-    specs: ["750-ton lift", "9-axle chassis", "154 m boom"],
-    available: 4,
-    image: "/images/earth_movers/earth_movers1.jpeg",
-  },
-  {
-    name: "Hitachi EH5000AC-3",
-    category: "Mining Truck",
-    specs: ["296-ton payload", "2,850 HP", "AC drive"],
-    available: 10,
-    image: "/images/earth_movers/earth_movers2.jpg",
-  },
+  { value: 12, suffix: "", label: "Engineers", icon: "⚙️" },
+  { value: 80, suffix: "+", label: "Skilled Labourers", icon: "👷" },
+  { value: 160, suffix: "+", label: "Projects Delivered", icon: "🏢" },
 ];
 
 export type Project = {
@@ -123,33 +43,257 @@ export type Project = {
 
 export const PROJECTS: Project[] = [
   {
-    slug: "national-expressway-corridor",
-    title: "National Expressway Corridor",
-    category: "Government",
-    location: "Karnataka, India",
+    slug: "minnal-m-mahal",
+    title: "Minnal M Mahal",
+    category: "Private",
+    location: "Coimbatore, Tamil Nadu",
+    year: "2023",
+    image: "/images/prayer_rooms/prayer13.jpeg",
+    hero: "/images/prayer_rooms/prayer13.jpeg",
+    tagline:
+      "A landmark marriage hall built for grand celebrations, delivered with precision engineering and premium finishing.",
+    client: "Private Client",
+    duration: "10 months",
+    scale: "2 banquet halls · 1,200-guest capacity",
+    value: "₹14 Cr",
+    story: {
+      challenge:
+        "The brief called for a marriage hall that could comfortably host large Tamil Nadu weddings — flexible seating for over a thousand guests, clear sightlines and a grand entrance, all on a tight urban plot.",
+      approach:
+        "Our engineering team designed a column-free banquet hall using long-span RCC beams, paired with a spacious porch, a dedicated catering block and ample parking. Finishing teams focused on durable, elegant materials suited to daily heavy footfall.",
+      impact:
+        "Minnal M Mahal opened on schedule and has since hosted hundreds of weddings and functions, becoming one of the region's preferred venues for large gatherings.",
+    },
+    highlights: [
+      "Column-free banquet hall for uninterrupted seating",
+      "1,200+ guest capacity across two halls",
+      "Dedicated catering and parking blocks",
+      "Delivered on schedule with zero safety incidents",
+    ],
+    gallery: [
+      "/images/prayer_rooms/prayer12.jpeg",
+      "/images/prayer_rooms/prayer11.jpeg",
+      "/images/prayer_rooms/prayer10.jpeg",
+    ],
+    metrics: [
+      { label: "Guest Capacity", value: "1,200+" },
+      { label: "Halls", value: "2" },
+      { label: "Duration", value: "10 months" },
+      { label: "Built-up Area", value: "45,000 sqft" },
+    ],
+    quote: {
+      text: "Our marriage hall project was completed with exceptional workmanship, timely delivery and excellent coordination throughout construction.",
+      author: "Minnal M Mahal",
+      role: "Marriage Hall · Coimbatore",
+    },
+  },
+  {
+    slug: "thangasaras-kalyana-mandapam",
+    title: "Thangasaras Kalyana Mandapam",
+    category: "Private",
+    location: "Coimbatore, Tamil Nadu",
+    year: "2022",
+    image: "/images/prayer_rooms/prayer9.jpeg",
+    hero: "/images/prayer_rooms/prayer9.jpeg",
+    tagline:
+      "A traditional kalyana mandapam reimagined with modern structural planning and timeless finishing.",
+    client: "Private Client",
+    duration: "9 months",
+    scale: "1 grand hall · 900-guest capacity",
+    value: "₹9.5 Cr",
+    story: {
+      challenge:
+        "The client wanted a mandapam that honoured traditional South Indian wedding rituals while offering modern comfort — proper ventilation, ample stage space and easy vehicle access for large families arriving together.",
+      approach:
+        "We planned a high-ceiling hall with a raised traditional stage, wide colonnades and a naturally ventilated design to reduce dependence on mechanical cooling. Structural works were sequenced to finish ahead of the peak wedding season.",
+      impact:
+        "The mandapam was handed over ahead of the wedding season and continues to host kalyana functions, naming ceremonies and community events throughout the year.",
+    },
+    highlights: [
+      "Traditional stage design with modern structural detailing",
+      "900-guest capacity hall",
+      "Naturally ventilated design",
+      "Completed ahead of wedding season",
+    ],
+    gallery: [
+      "/images/prayer_rooms/prayer8.jpeg",
+      "/images/prayer_rooms/prayer7.jpeg",
+      "/images/prayer_rooms/prayer6.jpeg",
+    ],
+    metrics: [
+      { label: "Guest Capacity", value: "900+" },
+      { label: "Halls", value: "1" },
+      { label: "Duration", value: "9 months" },
+      { label: "Built-up Area", value: "32,000 sqft" },
+    ],
+    quote: {
+      text: "The mandapam construction was handled with great respect for tradition alongside modern quality standards and timely completion.",
+      author: "Thangasaras Kalyana Mandapam",
+      role: "Marriage Hall · Coimbatore",
+    },
+  },
+  {
+    slug: "valliyammal-mahal",
+    title: "Valliyammal Mahal",
+    category: "Private",
+    location: "Coimbatore, Tamil Nadu",
     year: "2024",
+    image: "/images/prayer_rooms/prayer5.jpeg",
+    hero: "/images/prayer_rooms/prayer5.jpeg",
+    tagline:
+      "A community marriage hall delivering dependable quality and comfort for families across the region.",
+    client: "Private Client",
+    duration: "11 months",
+    scale: "2 halls · 1,000-guest capacity",
+    value: "₹11 Cr",
+    story: {
+      challenge:
+        "Valliyammal Mahal needed to serve as a dependable, affordable venue for local families — durable construction, straightforward maintenance and enough flexibility to host multiple events on the same day.",
+      approach:
+        "We used robust RCC framing, low-maintenance flooring and finishes, and a layout that allows two functions to run independently without disturbing each other. Site work was closely supervised by our engineering team throughout.",
+      impact:
+        "Valliyammal Mahal has become a trusted venue for weddings and family functions, valued for its upkeep and reliability since handover.",
+    },
+    highlights: [
+      "Two independent halls for simultaneous events",
+      "1,000-guest combined capacity",
+      "Low-maintenance, durable finishing",
+      "Close engineering supervision throughout construction",
+    ],
+    gallery: [
+      "/images/prayer_rooms/prayer4.jpeg",
+      "/images/prayer_rooms/prayer13.jpeg",
+      "/images/prayer_rooms/prayer9.jpeg",
+    ],
+    metrics: [
+      { label: "Guest Capacity", value: "1,000+" },
+      { label: "Halls", value: "2" },
+      { label: "Duration", value: "11 months" },
+      { label: "Built-up Area", value: "38,000 sqft" },
+    ],
+    quote: {
+      text: "The entire construction process was managed professionally with dependable quality and timely handover.",
+      author: "Valliyammal Mahal",
+      role: "Marriage Hall · Coimbatore",
+    },
+  },
+  {
+    slug: "funmall",
+    title: "Funmall",
+    category: "Private",
+    location: "Coimbatore, Tamil Nadu",
+    year: "2023",
+    image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1600&q=80",
+    hero: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2400&q=80",
+    tagline:
+      "A modern retail and entertainment mall built to anchor the neighbourhood's commercial growth.",
+    client: "Private Client",
+    duration: "18 months",
+    scale: "3 retail floors · multiplex & food court",
+    value: "₹95 Cr",
+    story: {
+      challenge:
+        "Funmall required a structure that could support a multi-brand retail mix, a multiplex and a busy food court — meaning wide clear spans, heavy floor loading and complex MEP coordination across three floors.",
+      approach:
+        "Our structural team designed wide-span RCC framing to keep retail floors column-light, while MEP and fire-safety systems were coordinated early with all anchor tenants to avoid rework. Site logistics were phased to keep the surrounding road network clear throughout construction.",
+      impact:
+        "Funmall opened on schedule and now operates as a busy retail and entertainment destination, with all major systems performing to design from day one.",
+    },
+    highlights: [
+      "Column-light retail floors on wide-span RCC framing",
+      "Multiplex and food court integrated into the base build",
+      "Early MEP coordination with anchor tenants",
+      "Zero disruption to the surrounding road network during construction",
+    ],
+    gallery: [
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1600&q=80",
+      "https://images.unsplash.com/photo-1464082354059-27db6ce50048?auto=format&fit=crop&w=1600&q=80",
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?auto=format&fit=crop&w=1600&q=80",
+    ],
+    metrics: [
+      { label: "Retail Floors", value: "3" },
+      { label: "Duration", value: "18 months" },
+      { label: "Built-up Area", value: "3.6L sqft" },
+      { label: "Parking Bays", value: "400+" },
+    ],
+    quote: {
+      text: "The entire commercial construction process was professionally managed with quality workmanship and consistent communication.",
+      author: "Funmall",
+      role: "Commercial Mall · Coimbatore",
+    },
+  },
+  {
+    slug: "itc-welcomhotel",
+    title: "ITC WelcomHotel",
+    category: "Private",
+    location: "Coimbatore, Tamil Nadu",
+    year: "2022",
+    image: "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=1600&q=80",
+    hero: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=2400&q=80",
+    tagline:
+      "A premium hospitality build delivered to the exacting quality and finishing standards of a national hotel brand.",
+    client: "ITC WelcomHotel",
+    duration: "24 months",
+    scale: "Multi-storey hotel tower · banquet & guest wings",
+    value: "₹140 Cr",
+    story: {
+      challenge:
+        "A hotel build of this stature demanded strict adherence to brand specifications — from structural tolerances to finishing quality — across guest rooms, banquet spaces and back-of-house services, with no room for compromise on safety or schedule.",
+      approach:
+        "We assigned senior engineers to run continuous quality audits against brand specifications, sequenced guest-room and banquet-wing construction in parallel, and maintained rigorous safety protocols across the site through to handover.",
+      impact:
+        "The hotel was delivered to the brand's exacting finishing standards and is now operational, reflecting Skandha Constructions' capability to deliver at a national hospitality standard.",
+    },
+    highlights: [
+      "Construction executed to national hotel brand specifications",
+      "Parallel guest-wing and banquet-wing delivery",
+      "Continuous quality audits throughout the build",
+      "Zero compromise on safety through handover",
+    ],
+    gallery: [
+      "https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=1600&q=80",
+      "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1600&q=80",
+      "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1600&q=80",
+    ],
+    metrics: [
+      { label: "Duration", value: "24 months" },
+      { label: "Category", value: "Hospitality" },
+      { label: "Quality Audits", value: "Continuous" },
+      { label: "Status", value: "Completed" },
+    ],
+    quote: {
+      text: "The project was delivered with great attention to quality, safety and finishing standards.",
+      author: "ITC WelcomHotel",
+      role: "Hospitality · Coimbatore",
+    },
+  },
+  {
+    slug: "pwd-projects",
+    title: "PWD Projects",
+    category: "Government",
+    location: "Tamil Nadu, India",
+    year: "2021–2024",
     image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1600&q=80",
     hero: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=2400&q=80",
     tagline:
-      "A 184-km lifeline connecting two of India’s fastest-growing economic regions — built without disturbing a single protected forest grove.",
-    client: "National Highways Authority of India",
-    duration: "32 months",
-    scale: "184 km · 6 lanes · 9 interchanges",
-    value: "₹4,820 Cr",
+      "Multiple Public Works Department contracts delivered across Tamil Nadu — roads, public buildings and civic infrastructure.",
+    client: "Public Works Department (PWD)",
+    duration: "Ongoing multi-year partnership",
+    scale: "Multiple roads & civic works",
+    value: "Multiple contracts",
     story: {
       challenge:
-        "When the Ministry awarded us the corridor, the brief was uncompromising: connect two booming industrial belts across rugged Western Ghats terrain, navigate three protected biodiversity zones, and shorten the existing 9-hour drive to under 4 — all without delaying a single rural commute.",
+        "Government infrastructure work demands strict compliance — tendering norms, quality audits, safety protocols and public accountability — delivered on tight civic timelines with minimal disruption to daily public use.",
       approach:
-        "We mobilised 47 earth movers within 11 days. Senior engineers re-routed 22 km of alignment to skirt the forest reserves entirely. Night-only blasting windows protected wildlife corridors. We built temporary bypasses through every village before excavation began, so daily life never paused.",
+        "Our project management team follows PWD specifications and inspection schedules closely, deploying senior engineers on every contract and maintaining transparent documentation and reporting at every milestone.",
       impact:
-        "Delivered three weeks ahead of contractual handover. The corridor now carries 38,000 vehicles a day, has cut freight costs for 1,200+ MSMEs by 31%, and earned a Ministry citation for zero-incident environmental compliance.",
+        "Skandha Constructions remains an empanelled contractor for the Public Works Department, having delivered multiple road and civic infrastructure contracts across Tamil Nadu to specification and on schedule.",
     },
     highlights: [
-      "47 heavy earth movers deployed in 11 days",
-      "Zero protected trees felled across 184 km",
-      "Delivered 3 weeks ahead of schedule",
-      "1,200+ local jobs created during construction",
-      "Class-A safety record — zero lost-time incidents",
+      "Empanelled Public Works Department contractor",
+      "Multiple roads and civic works completed",
+      "Strict adherence to government quality and safety norms",
+      "Transparent milestone reporting on every contract",
     ],
     gallery: [
       "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1600&q=80",
@@ -157,245 +301,15 @@ export const PROJECTS: Project[] = [
       "https://images.unsplash.com/photo-1506521781263-d8422e82f27a?auto=format&fit=crop&w=1600&q=80",
     ],
     metrics: [
-      { label: "Length", value: "184 km" },
-      { label: "Travel time saved", value: "5 hrs" },
-      { label: "Daily vehicles", value: "38k+" },
-      { label: "Local jobs", value: "1,200+" },
+      { label: "Contract Type", value: "Government" },
+      { label: "Sector", value: "Roads & Civic" },
+      { label: "Status", value: "Ongoing" },
+      { label: "Region", value: "Tamil Nadu" },
     ],
     quote: {
-      text: "Skandha Constructions understood that an expressway isn’t just asphalt — it’s the spine of a region’s economy. They delivered with a discipline we rarely see in public works.",
-      author: "Sh. R. Venkatesh",
-      role: "Project Director, NHAI",
-    },
-  },
-  {
-    slug: "skyline-business-tower",
-    title: "Skyline Business Tower",
-    category: "Private",
-    location: "Mumbai, India",
-    year: "2024",
-    image: "https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=1600&q=80",
-    hero: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=2400&q=80",
-    tagline:
-      "A 42-storey landmark rising from one of Mumbai’s most constrained plots — handed over three weeks ahead of schedule.",
-    client: "Skyline Developers",
-    duration: "28 months",
-    scale: "42 floors · 1.8M sq.ft · LEED Platinum",
-    value: "₹1,640 Cr",
-    story: {
-      challenge:
-        "A 0.6-acre plot in the heart of BKC, surrounded on three sides by operational office towers, demanded a build that could go vertical without ever closing a neighbouring street. Air-rights, vibration limits and Mumbai’s monsoon were all on the table.",
-      approach:
-        "We engineered a top-down construction sequence — basements and superstructure rising simultaneously. A custom hydraulic climbing formwork shaved 9 days per floor. Vibration sensors on neighbouring buildings reported live to a war-room dashboard the client could see at any time.",
-      impact:
-        "Handed over three weeks ahead of schedule. The tower achieved LEED Platinum on its first audit and is now anchored by three Fortune 500 tenants. Skyline reported a 17% premium on per-sq-ft rentals against the BKC average.",
-    },
-    highlights: [
-      "Top-down construction shaved 4 months off the timeline",
-      "Zero complaints from 14 surrounding buildings",
-      "LEED Platinum certified on first audit",
-      "9 days saved per floor with custom formwork",
-      "100% monsoon-proofed work calendar",
-    ],
-    gallery: [
-      "/images/bedroom/bedroom1.jpeg",
-      "/images/kitchen_interiors/kitchen3.jpeg",
-      "/images/cupboards/bedroom_cup1.jpeg",
-    ],
-    metrics: [
-      { label: "Height", value: "182 m" },
-      { label: "Floors", value: "42" },
-      { label: "Built-up area", value: "1.8M sqft" },
-      { label: "Schedule", value: "−21 days" },
-    ],
-    quote: {
-      text: "Skandha Constructions delivered our 42-storey tower three weeks ahead of schedule. Their precision and discipline are unmatched in the industry.",
-      author: "Aarav Mehta",
-      role: "CEO, Skyline Developers",
-    },
-  },
-  {
-    slug: "coastal-port-expansion",
-    title: "Coastal Port Expansion",
-    category: "Government",
-    location: "Chennai, India",
-    year: "2023",
-    image: "https://images.unsplash.com/photo-1494522855154-9297ac14b55f?auto=format&fit=crop&w=1600&q=80",
-    hero: "https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=2400&q=80",
-    tagline:
-      "Doubling a 70-year-old port’s capacity while keeping every existing berth fully operational, every single day.",
-    client: "Chennai Port Authority",
-    duration: "41 months",
-    scale: "2 deep-water berths · 1.4 km breakwater · 92-acre yard",
-    value: "₹2,950 Cr",
-    story: {
-      challenge:
-        "The port was already running at 110% capacity. A six-month closure would have cost the regional economy ₹8,000 Cr. We had to add two deep-water berths, a 1.4 km breakwater and an entire container yard — all while ships kept docking on schedule.",
-      approach:
-        "Marine works ran on a strict tide-based 18-hour cycle, choreographed with the harbour master. We deployed three of our largest mining trucks and a Liebherr 750-ton crane to pre-fabricate caissons offshore. Land works happened only between berthing windows, tracked minute-by-minute.",
-      impact:
-        "Capacity doubled to 2.4M TEUs annually. The expansion paid for itself in 4.2 years against a 7-year plan. Not a single ship was turned away during construction.",
-    },
-    highlights: [
-      "Zero operational downtime over 41 months",
-      "1.4 km breakwater built in 14 months",
-      "Capacity doubled to 2.4M TEUs/year",
-      "Pre-fabricated caisson method — first in India",
-      "Payback period reduced from 7 to 4.2 years",
-    ],
-    gallery: [
-      "https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&fit=crop&w=1600&q=80",
-      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1600&q=80",
-      "https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=1600&q=80",
-    ],
-    metrics: [
-      { label: "New berths", value: "2" },
-      { label: "Breakwater", value: "1.4 km" },
-      { label: "Capacity", value: "2.4M TEU" },
-      { label: "Downtime", value: "0 days" },
-    ],
-    quote: {
-      text: "An impossible brief delivered impossibly well. Skandha Constructions respected our daily operations as much as their own deadlines.",
-      author: "Cdr. (Retd.) Manoj Pillai",
-      role: "Chairman, Chennai Port Authority",
-    },
-  },
-  {
-    slug: "heritage-civic-center",
-    title: "Heritage Civic Center",
-    category: "Government",
-    location: "Hyderabad, India",
-    year: "2023",
-    image: "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=1600&q=80",
-    hero: "https://images.unsplash.com/photo-1534430480872-3498386e7856?auto=format&fit=crop&w=2400&q=80",
-    tagline:
-      "Restoring a 140-year-old Nizam-era civic hall and seamlessly fusing it with a modern 4-storey administrative wing.",
-    client: "Government of Telangana",
-    duration: "26 months",
-    scale: "Heritage restoration · 240,000 sq.ft new build",
-    value: "₹680 Cr",
-    story: {
-      challenge:
-        "The original limestone façade had cracks dating to the 1908 floods. The brief: preserve every original stone, integrate modern HVAC, fire safety and accessibility, and add a contemporary wing that paid quiet respect to its older neighbour.",
-      approach:
-        "We digitally scanned every stone, hand-numbered 11,400 of them, and sourced matching limestone from the original quarry — still operational two centuries later. Master craftsmen from Rajasthan worked alongside our structural engineers. The new wing was clad in patinated brass to age gracefully alongside the heritage block.",
-      impact:
-        "Reopened to citizens in October 2023 with a 40-year structural warranty on the heritage block. The civic center now hosts 2,400 visitors daily and won the State Architecture Award for Adaptive Reuse.",
-    },
-    highlights: [
-      "11,400 original limestone blocks preserved",
-      "Master craftsmen from 4 Indian states",
-      "40-year structural warranty on heritage wing",
-      "State Architecture Award 2024 — Adaptive Reuse",
-      "Fully accessible per WCAG / RPwD norms",
-    ],
-    gallery: [
-      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1600&q=80",
-      "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1600&q=80",
-      "https://images.unsplash.com/photo-1494522855154-9297ac14b55f?auto=format&fit=crop&w=1600&q=80",
-    ],
-    metrics: [
-      { label: "Heritage age", value: "140 yrs" },
-      { label: "Stones preserved", value: "11.4k" },
-      { label: "Daily visitors", value: "2,400" },
-      { label: "Awards", value: "3" },
-    ],
-    quote: {
-      text: "They treated our heritage as if it were their own. Every cornice, every cornice stone — restored with reverence.",
-      author: "Smt. Lakshmi Reddy",
-      role: "Principal Secretary, GAD Telangana",
-    },
-  },
-  {
-    slug: "aurum-residences",
-    title: "Aurum Residences",
-    category: "Private",
-    location: "Pune, India",
-    year: "2025",
-    image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1600&q=80",
-    hero: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=2400&q=80",
-    tagline:
-      "A 312-unit ultra-luxury residential community where every apartment was personalised before the foundation was poured.",
-    client: "Aurum Group",
-    duration: "34 months",
-    scale: "5 towers · 312 units · 14-acre podium",
-    value: "₹1,210 Cr",
-    story: {
-      challenge:
-        "Aurum’s buyers had bought into a promise: no two homes alike. That meant 312 unique floor-plate variations, custom finishes, and bespoke smart-home configurations — all within a single coordinated build program with zero handover delays.",
-      approach:
-        "We built a digital twin of the entire community in BIM. Every buyer walked through their actual apartment in VR, signed off finishes 18 months before pouring. A dedicated client-relations engineer was assigned to every 12 units. MEP runs were pre-mapped to accommodate any future personalisation.",
-      impact:
-        "All 312 units handed over within a 9-day window — a record for ultra-luxury in India. Resale values are already trending 22% above launch price; Aurum reported a 4.9/5 average client satisfaction across 287 surveys.",
-    },
-    highlights: [
-      "312 unique apartment configurations",
-      "VR walkthroughs 18 months pre-handover",
-      "All units delivered in a 9-day window",
-      "4.9/5 average buyer satisfaction",
-      "22% appreciation within 6 months of handover",
-    ],
-    gallery: [
-      "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1600&q=80",
-      "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&w=1600&q=80",
-      "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1600&q=80",
-    ],
-    metrics: [
-      { label: "Units", value: "312" },
-      { label: "Towers", value: "5" },
-      { label: "Satisfaction", value: "4.9/5" },
-      { label: "Appreciation", value: "+22%" },
-    ],
-    quote: {
-      text: "From the first walkthrough to handover, every interaction felt curated. Skandha Constructions is the gold standard of construction.",
-      author: "Isabella Cruz",
-      role: "Principal Architect, Cruz & Vega",
-    },
-  },
-  {
-    slug: "industrial-logistics-park",
-    title: "Industrial Logistics Park",
-    category: "Private",
-    location: "Gujarat, India",
-    year: "2022",
-    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1600&q=80",
-    hero: "https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=2400&q=80",
-    tagline:
-      "A 420-acre Grade-A logistics park brought to operational readiness in 14 months — half the industry standard.",
-    client: "Nexus Industries",
-    duration: "14 months",
-    scale: "420 acres · 24 warehouses · 6.2M sq.ft",
-    value: "₹2,100 Cr",
-    story: {
-      challenge:
-        "Nexus had pre-leased 80% of the park to global e-commerce tenants who needed go-live for the festive season. The site was 420 acres of saline marshland, 38 km from the nearest concrete plant, with monsoon arriving in 90 days.",
-      approach:
-        "We airlifted in 14 of our largest dozers and graders. A mobile concrete batching plant was commissioned on-site within 17 days. We worked 22-hour shifts behind floodlights through monsoon, with elevated platforms keeping crews dry. Tenant fit-outs began in unfinished bays under controlled environments.",
-      impact:
-        "Park went operational 14 months after groundbreaking — versus a 28-month industry benchmark. All 24 warehouses leased before completion. Nexus reported the project delivered 19% above projected ROI.",
-    },
-    highlights: [
-      "14-month delivery vs. 28-month benchmark",
-      "On-site mobile batching plant in 17 days",
-      "100% pre-leased before completion",
-      "19% above projected ROI",
-      "1.4 million man-hours, zero fatalities",
-    ],
-    gallery: [
-      "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&w=1600&q=80",
-      "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1600&q=80",
-      "https://images.unsplash.com/photo-1494522855154-9297ac14b55f?auto=format&fit=crop&w=1600&q=80",
-    ],
-    metrics: [
-      { label: "Land", value: "420 ac" },
-      { label: "Warehouses", value: "24" },
-      { label: "Built-up", value: "6.2M sqft" },
-      { label: "Speed", value: "2× faster" },
-    ],
-    quote: {
-      text: "We leased 14 excavators across two states. Zero downtime, immaculate maintenance, and operators who knew the job inside-out.",
-      author: "Priya Nair",
-      role: "Operations Director, BuildCore Ltd.",
+      text: "Government project execution was handled with full transparency, safety compliance and consistent quality across every contract.",
+      author: "PWD Projects",
+      role: "Government · Tamil Nadu",
     },
   },
 ];
@@ -403,39 +317,38 @@ export const PROJECTS: Project[] = [
 export const TESTIMONIALS = [
   {
     quote:
-      "Skandha Constructions delivered our 42-storey tower three weeks ahead of schedule. Their precision and discipline are unmatched in the industry.",
-    name: "Aarav Mehta",
-    role: "CEO, Skyline Developers",
+      "Our marriage hall project was completed with exceptional workmanship, timely delivery and excellent coordination throughout construction.",
+    project: "Minnal M Mahal",
   },
   {
     quote:
-      "We leased 14 excavators across two states. Zero downtime, immaculate maintenance, and operators who knew the job inside-out.",
-    name: "Priya Nair",
-    role: "Operations Director, BuildCore Ltd.",
+      "The mandapam construction was handled with great respect for tradition alongside modern quality standards and timely completion.",
+    project: "Thangasaras Kalyana Mandapam",
   },
   {
     quote:
-      "A genuinely premium partner. The team handled federal compliance, environmental audits and community liaison flawlessly.",
-    name: "Rajesh Kulkarni",
-    role: "Director, Public Works Department",
+      "The entire construction process was managed professionally with dependable quality and timely handover.",
+    project: "Valliyammal Mahal",
   },
   {
     quote:
-      "From the first walkthrough to handover, every interaction felt curated. Skandha Constructions is the gold standard of construction.",
-    name: "Isabella Cruz",
-    role: "Principal Architect, Cruz & Vega",
+      "The entire commercial construction process was professionally managed with quality workmanship and consistent communication.",
+    project: "Funmall",
+  },
+  {
+    quote:
+      "The project was delivered with great attention to quality, safety and finishing standards.",
+    project: "ITC WelcomHotel",
   },
 ];
 
 export const CLIENTS = [
-  "Ministry of Infrastructure",
-  "Skyline Developers",
-  "BuildCore Ltd.",
+  "Minnal M Mahal",
+  "Thangasaras Kalyana Mandapam",
+  "Valliyammal Mahal",
   "PWD",
-  "Aurum Group",
-  "Nexus Industries",
-  "Coastal Authority",
-  "Cruz & Vega",
+  "Funmall",
+  "ITC WelcomHotel",
 ];
 
 export const PROCESS = [
@@ -489,7 +402,7 @@ export const RESIDENTIAL_PROJECTS: PortfolioProject[] = [
     location: "Chennai, Tamil Nadu",
     type: "Apartment Complex",
     status: "Ongoing",
-    image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1590644365607-1c5a92909f6f?auto=format&fit=crop&w=800&q=80",
   },
   {
     id: 3,
@@ -505,7 +418,7 @@ export const RESIDENTIAL_PROJECTS: PortfolioProject[] = [
     location: "Madurai, Tamil Nadu",
     type: "Multi-Storey Apartments",
     status: "Ongoing",
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?auto=format&fit=crop&w=800&q=80",
   },
   {
     id: 5,
@@ -513,7 +426,7 @@ export const RESIDENTIAL_PROJECTS: PortfolioProject[] = [
     location: "Erode, Tamil Nadu",
     type: "Gated Community Villas",
     status: "Ongoing",
-    image: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1541976590-713941681591?auto=format&fit=crop&w=800&q=80",
   },
   {
     id: 6,
@@ -540,7 +453,7 @@ export const COMMERCIAL_PROJECTS: PortfolioProject[] = [
     location: "Chennai, Tamil Nadu",
     type: "Commercial Complex",
     status: "Ongoing",
-    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=800&q=80",
   },
   {
     id: 3,
@@ -556,7 +469,7 @@ export const COMMERCIAL_PROJECTS: PortfolioProject[] = [
     location: "Salem, Tamil Nadu",
     type: "Retail & Mall",
     status: "Ongoing",
-    image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1516156008625-3a9d6067fab5?auto=format&fit=crop&w=800&q=80",
   },
   {
     id: 5,

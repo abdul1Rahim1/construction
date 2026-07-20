@@ -1,8 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, PlayCircle, ShieldCheck, Award, Users } from "lucide-react";
-import Image from "next/image";
+import { ArrowRight, Phone, ShieldCheck, Users } from "lucide-react";
 import dynamic from "next/dynamic";
 
 const ThreeParticles = dynamic(() => import("./ThreeParticles"), { ssr: false });
@@ -13,17 +12,10 @@ export default function Hero() {
       id="home"
       className="relative min-h-screen flex items-center pt-52 pb-20 overflow-hidden"
     >
-      {/* Background image */}
+      {/* Background gradient */}
       <div className="absolute inset-0 -z-10">
-        <Image
-          src="/images/earth_movers/earth_movers1.jpeg"
-          alt="Construction site"
-          fill
-          priority
-          className="object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-ivory via-ivory/95 to-ivory/40" />
-        <div className="absolute inset-0 bg-gradient-to-b from-ivory/40 via-transparent to-ivory" />
+        <div className="absolute inset-0 bg-gradient-to-r from-ivory via-ivory to-pearl/40" />
+        <div className="absolute inset-0 bg-gradient-to-b from-ivory via-transparent to-ivory" />
       </div>
 
       {/* Decorative grid */}
@@ -47,7 +39,7 @@ export default function Hero() {
               className="inline-flex items-center gap-2 rounded-full glass px-4 py-2 text-xs sm:text-sm font-medium text-charcoal/80"
             >
               <span className="h-1.5 w-1.5 rounded-full bg-gold animate-pulse" />
-              Trusted by Government &amp; Fortune-listed Developers
+              Trusted by Government &amp; Private Clients
             </motion.div>
 
             <motion.h1
@@ -58,7 +50,7 @@ export default function Hero() {
             >
               Building <span className="text-gradient-gold italic">legacies.</span>
               <br />
-              Moving <span className="text-gradient-gold italic">earth.</span>
+              Building <span className="text-gradient-gold italic">trust.</span>
             </motion.h1>
 
             <motion.p
@@ -68,8 +60,8 @@ export default function Hero() {
               className="mt-6 text-base sm:text-lg text-charcoal/70 leading-relaxed"
             >
               Skandha Constructions delivers world-class government and private
-              projects, backed by a 180-strong fleet of premium earth-moving
-              machinery available for lease across the nation.
+              construction projects, backed by 14+ years of engineering
+              precision and on-time delivery across Tamil Nadu.
             </motion.p>
 
             <motion.div
@@ -86,11 +78,11 @@ export default function Hero() {
                 <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1.5" />
               </a>
               <a
-                href="#equipment"
+                href="#contact"
                 className="group inline-flex items-center gap-2 rounded-full border border-charcoal/15 bg-white/60 backdrop-blur px-7 py-4 text-sm sm:text-base font-medium text-charcoal hover:border-gold hover:bg-white hover:-translate-y-0.5 hover:shadow-lg transition-all duration-200"
               >
-                <PlayCircle className="h-5 w-5 text-gold-deep transition-transform duration-200 group-hover:scale-110" />
-                Browse Equipment Fleet
+                <Phone className="h-5 w-5 text-gold-deep transition-transform duration-200 group-hover:scale-110" />
+                Talk to Our Team
               </a>
             </motion.div>
 
@@ -101,9 +93,8 @@ export default function Hero() {
               className="mt-12 flex flex-wrap items-center gap-6"
             >
               {[
-                { icon: Award, label: "ISO 9001:2015" },
                 { icon: ShieldCheck, label: "Govt. Class-A" },
-                { icon: Users, label: "1,200+ Crew" },
+                { icon: Users, label: "80+ Skilled Crew" },
               ].map((b) => (
                 <div key={b.label} className="flex items-center gap-2">
                   <b.icon className="h-5 w-5 text-gold-deep" />
@@ -125,12 +116,12 @@ export default function Hero() {
               className="glass rounded-3xl border border-gold/20 p-7 shadow-2xl"
             >
               <p className="text-[10px] uppercase tracking-[0.3em] text-gold-deep mb-5 font-medium">
-                Delivered across South India
+                Delivered across Tamil Nadu
               </p>
               <div className="grid grid-cols-2 gap-3">
                 {[
-                  { value: "420+", label: "Projects Delivered" },
-                  { value: "180+", label: "Machine Fleet" },
+                  { value: "160+", label: "Projects Delivered" },
+                  { value: "80+",  label: "Skilled Labourers" },
                   { value: "14+",  label: "Years of Excellence" },
                   { value: "96%",  label: "On-Time Delivery" },
                 ].map((s) => (
@@ -160,31 +151,7 @@ export default function Hero() {
               </div>
               <div>
                 <p className="text-sm font-semibold text-charcoal">Government Class-A Contractor</p>
-                <p className="text-xs text-charcoal/55 mt-0.5">ISO 9001:2015 · HSE Compliant · LEED Aligned</p>
-              </div>
-            </motion.div>
-
-            {/* Equipment preview strip */}
-            <motion.div
-              initial={{ opacity: 0, x: 40 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.7, delay: 0.72 }}
-              className="relative overflow-hidden rounded-2xl border border-gold/15 shadow-xl"
-              style={{ height: "140px" }}
-            >
-              <Image
-                src="/images/earth_movers/earth_movers2.jpg"
-                alt="Heavy machinery fleet"
-                fill={false}
-                width={600}
-                height={140}
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-linear-to-r from-charcoal/60 to-charcoal/10 flex items-center px-5">
-                <div>
-                  <p className="text-xs text-ivory/70 uppercase tracking-widest">Fleet ready for lease</p>
-                  <p className="font-display text-xl text-ivory mt-0.5">180+ Machines Nationwide</p>
-                </div>
+                <p className="text-xs text-charcoal/55 mt-0.5">14+ Years of Trusted Project Delivery</p>
               </div>
             </motion.div>
           </div>

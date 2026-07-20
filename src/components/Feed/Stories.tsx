@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { Plus } from "lucide-react";
 
 interface Story {
@@ -62,13 +63,14 @@ export default function Stories() {
             className="flex-shrink-0 relative group cursor-pointer"
           >
             {/* Story Circle */}
-            <div className={`w-20 h-20 rounded-full flex items-center justify-center overflow-hidden border-2 transition-all ${
+            <div className={`relative w-20 h-20 rounded-full flex items-center justify-center overflow-hidden border-2 transition-all ${
               story.viewed ? "border-gray-300 bg-gray-100" : "border-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-gray-100"
             }`}>
-              <img
+              <Image
                 src={story.avatar}
                 alt={story.username}
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
               />
               {story.username === "Your Story" && (
                 <div className="absolute inset-0 flex items-center justify-center bg-black/10">

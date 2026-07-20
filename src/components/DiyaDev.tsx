@@ -1,7 +1,6 @@
 ﻿"use client";
 
 import { motion } from "framer-motion";
-import { Phone, Mail } from "lucide-react";
 
 export default function DiyaDev() {
   return (

@@ -96,7 +96,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-4 w-4 text-gold flex-shrink-0" />
-                hello@Skandha Constructionsconstructions.com
+                hello@skandhaconstructions.com
               </li>
             </ul>
 
@@ -120,7 +120,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-16 pt-8 border-t border-ivory/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-ivory/50">
-          <p>© {new Date().getFullYear()} Skandha Constructions Constructions. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Skandha Constructions. All rights reserved.</p>
           <div className="flex items-center gap-6">
             <a href="#" className="hover:text-gold-2 transition">Privacy</a>
             <a href="#" className="hover:text-gold-2 transition">Terms</a>

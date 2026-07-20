@@ -36,14 +36,14 @@ export default function Navbar() {
           <Link href="#home" className="flex items-center group">
             <div
               className={`relative transition-all duration-300 group-hover:scale-[1.03] ${
-                scrolled ? "h-14 w-44" : "h-24 w-56"
+                scrolled ? "h-[75px] w-[235px]" : "h-[130px] w-[300px]"
               }`}
             >
               <Image
                 src="/images/logo1.png"
                 alt="Skandha Constructions"
                 fill
-                sizes="(max-width: 1024px) 176px, 224px"
+                sizes="(max-width: 1024px) 235px, 300px"
                 className="object-contain object-left"
                 priority
               />

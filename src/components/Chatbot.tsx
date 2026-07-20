@@ -13,10 +13,22 @@ function getResponse(input: string): string {
   const msg = input.toLowerCase();
 
   if (/hello|hi|hey|namaste/i.test(msg))
-    return "Hello! 👋 Welcome to Skandha Constructions. I can help you with our services, equipment enquiries, projects, or contact info. What are you looking for?";
+    return "Hello! 👋 Welcome to Skandha Constructions. I can help you with our services, completed projects, or contact info. What are you looking for?";
 
-  if (/excavat|earth.?mov|digg|grading|earthwork/i.test(msg))
-    return "Our Earth Moving & Excavation services include bulk earthworks, site clearance, trenching, grading, and precision levelling. We deploy a 180+ fleet of excavators and graders.\n\n📞 Call: +91 90873 53637 for a consultation.";
+  if (/how many engineer|no\.? of engineer|number of engineer|engineers?\b/i.test(msg))
+    return "We currently have 12 engineers supported by more than 80 skilled labourers.";
+
+  if (/labour|labor|worker|crew/i.test(msg))
+    return "We have more than 80 skilled labourers.";
+
+  if (/which project|worked on|major project|portfolio|projects have you/i.test(msg))
+    return "We've worked on Minnal M Mahal, Thangasaras Kalyana Mandapam, Valliyammal Mahal, Funmall, ITC WelcomHotel, and multiple PWD Government Projects.";
+
+  if (/how many project|projects delivered|projects completed|completed.*project/i.test(msg))
+    return "Skandha Constructions has successfully completed over 160 projects.";
+
+  if (/marriage hall|kalyana|mandapam|banquet|wedding hall/i.test(msg))
+    return "Yes, we specialise in marriage hall and kalyana mandapam construction — including Minnal M Mahal, Thangasaras Kalyana Mandapam and Valliyammal Mahal.";
 
   if (/civil|construct|build/i.test(msg))
     return "We offer comprehensive Civil Works — RCC buildings, load-bearing structures, retaining walls, culverts, and more. From foundations to roof, Skandha Constructions handles it all. Contact us for a free site visit!";
@@ -39,14 +51,17 @@ function getResponse(input: string): string {
   if (/approv|document|permit|license|tax|assessment/i.test(msg))
     return "We handle all Approval & Documentation Works — building permits, plan approvals, tax assessments, occupancy certificates, and liaison with local authorities. No stress for you!";
 
-  if (/equipment|excavator|bulldozer|machinery|lease|rent|hire|crane|grader/i.test(msg))
-    return "We lease 180+ premium earth-moving machines — excavators, bulldozers, motor graders, cranes, compactors, dumpers, and more.\n\nFill out our Equipment Enquiry form on the site or call +91 90873 53637 for availability and rates.";
+  if (/government|pwd|public works/i.test(msg))
+    return "Yes, we are an empanelled Public Works Department (PWD) contractor, delivering government infrastructure projects across Tamil Nadu.";
 
-  if (/project|residential|commercial|apartment|villa/i.test(msg))
-    return "We've delivered 420+ projects — residential villas, apartment complexes, commercial buildings, tech parks, and industrial facilities. Visit our Projects section to see our full portfolio!";
+  if (/commercial|mall|office|retail/i.test(msg))
+    return "Yes, we provide commercial construction — malls, office complexes and retail spaces, including projects like Funmall.";
+
+  if (/residential|apartment|villa/i.test(msg))
+    return "Yes, we provide residential construction — apartments, villas and gated communities across Tamil Nadu.";
 
   if (/experience|year|about|history|founder|owner/i.test(msg))
-    return "Skandha Constructions is led by Karuppusamy Udhayakumar with 14+ years of experience in the construction industry. We've built a reputation for quality, precision, and on-time delivery across South India.";
+    return "Skandha Constructions is led by Karuppusamy Udhayakumar with 14+ years of experience in the construction industry, delivering trusted projects across Tamil Nadu.";
 
   if (/real.?estate|property|diya|diyadev|developer/i.test(msg))
     return "DiyaDev Developers is our real estate arm! 🏠\n\nWe offer residential properties (2BHK, 3BHK, villas) and commercial spaces. Scroll to the DiyaDev section below or call +91 90873 53637 for current listings.";
@@ -57,7 +72,7 @@ function getResponse(input: string): string {
   if (/quote|price|cost|rate|estimate|charge|fee/i.test(msg))
     return "We provide custom quotes tailored to your project scope, timeline, and location. Please contact us directly at +91 90873 53637 or fill out the Contact form for a detailed estimate.";
 
-  return "I can help you with:\n• 🏗️ Construction Services\n• 🚜 Equipment Leasing\n• 🏢 Projects Portfolio\n• 🏠 DiyaDev Properties\n• 📞 Contact Information\n\nWhat would you like to know?";
+  return "I can help you with:\n• 🏗️ Construction Services\n• 🏢 Completed Projects\n• 🏠 DiyaDev Properties\n• 📞 Contact Information\n\nWhat would you like to know?";
 }
 
 export default function Chatbot() {
@@ -65,7 +80,7 @@ export default function Chatbot() {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: 1,
-      text: "Hello! 👋 I'm the Skandha Constructions assistant. Ask me about our services, equipment leasing, projects, or DiyaDev properties.",
+      text: "Hello! 👋 I'm the Skandha Constructions assistant. Ask me about our services, completed projects, or DiyaDev properties.",
       sender: "bot",
     },
   ]);

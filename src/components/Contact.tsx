@@ -34,7 +34,7 @@ export default function Contact() {
             <div className="mt-10 space-y-5">
               {[
                 { icon: Phone, label: "Call us", value: "+91 80 4000 1996" },
-                { icon: Mail, label: "Email", value: "hello@Skandha Constructionsconstructions.com" },
+                { icon: Mail, label: "Email", value: "hello@skandhaconstructions.com" },
                 { icon: MapPin, label: "Headquarters", value: "12 Brigade Road, Bengaluru, IN" },
               ].map((c) => (
                 <div key={c.label} className="flex items-start gap-4">
@@ -94,7 +94,7 @@ export default function Contact() {
               >
                 <option>Government project</option>
                 <option>Private project</option>
-                <option>Earth mover leasing</option>
+                <option>Marriage hall / event construction</option>
                 <option>Consultation</option>
               </select>
             </div>

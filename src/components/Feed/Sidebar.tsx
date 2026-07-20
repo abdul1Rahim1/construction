@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { Search, Settings } from "lucide-react";
 
 const SUGGESTED_ACCOUNTS = [
@@ -78,9 +79,11 @@ export default function Sidebar() {
               className="flex items-center justify-between"
             >
               <div className="flex items-center gap-3 flex-1">
-                <img
+                <Image
                   src={account.avatar}
                   alt={account.name}
+                  width={32}
+                  height={32}
                   className="w-8 h-8 rounded-full object-cover"
                 />
                 <div className="flex-1 min-w-0">

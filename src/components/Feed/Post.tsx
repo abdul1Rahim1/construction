@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { Heart, MessageCircle, Share2, MoreVertical } from "lucide-react";
 
 interface PostProps {
@@ -37,9 +38,11 @@ export default function Post({ author, timestamp, content, image, likes, comment
       {/* Header */}
       <div className="p-4 flex items-center justify-between border-b border-gray-100">
         <div className="flex items-center gap-3">
-          <img
+          <Image
             src={author.avatar}
             alt={author.name}
+            width={40}
+            height={40}
             className="w-10 h-10 rounded-full object-cover"
           />
           <div>
@@ -59,11 +62,12 @@ export default function Post({ author, timestamp, content, image, likes, comment
 
       {/* Image */}
       {image && (
-        <div className="w-full max-h-96 overflow-hidden">
-          <img
+        <div className="relative w-full h-96 max-h-96 overflow-hidden">
+          <Image
             src={image}
             alt="Post content"
-            className="w-full h-full object-cover"
+            fill
+            className="object-cover"
           />
         </div>
       )}

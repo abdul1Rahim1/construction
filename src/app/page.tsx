@@ -3,7 +3,6 @@ import Marquee from "@/components/Marquee";
 import About from "@/components/About";
 import Services from "@/components/Services";
 import Stats from "@/components/Stats";
-import Equipment from "@/components/Equipment";
 import Projects from "@/components/Projects";
 import Gallery from "@/components/Gallery";
 import Process from "@/components/Process";
@@ -20,7 +19,6 @@ export default function Home() {
       <About />
       <Services />
       <Stats />
-      <Equipment />
       <Projects />
       <Gallery />
       <Process />

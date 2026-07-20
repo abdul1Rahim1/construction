@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Image, MapPin, Smile } from "lucide-react";
+import NextImage from "next/image";
+import { Image as ImageIcon, MapPin, Smile } from "lucide-react";
 
 export default function CreatePost() {
   const [content, setContent] = useState("");
@@ -16,9 +17,11 @@ export default function CreatePost() {
     >
       <div className="flex gap-4">
         {/* Avatar */}
-        <img
+        <NextImage
           src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=40&h=40&fit=crop"
           alt="Your avatar"
+          width={40}
+          height={40}
           className="w-10 h-10 rounded-full object-cover flex-shrink-0"
         />
 
@@ -53,7 +56,7 @@ export default function CreatePost() {
               <div className="flex items-center gap-4">
                 <div className="flex gap-2 flex-1">
                   <button className="flex items-center gap-2 text-gray-600 hover:text-blue-600 hover:bg-blue-50 px-3 py-2 rounded-lg transition-colors text-sm">
-                    <Image className="w-5 h-5" />
+                    <ImageIcon className="w-5 h-5" />
                     <span>Photo/Video</span>
                   </button>
                   <button className="flex items-center gap-2 text-gray-600 hover:text-blue-600 hover:bg-blue-50 px-3 py-2 rounded-lg transition-colors text-sm">

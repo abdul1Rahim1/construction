@@ -2,7 +2,7 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
-import { Quote, ChevronLeft, ChevronRight, Star } from "lucide-react";
+import { Quote, ChevronLeft, ChevronRight } from "lucide-react";
 import { TESTIMONIALS } from "@/lib/data";
 
 export default function Testimonials() {
@@ -45,13 +45,7 @@ export default function Testimonials() {
               <p className="font-display text-2xl sm:text-3xl lg:text-4xl leading-relaxed text-ivory/95 max-w-3xl mx-auto">
                 “{t.quote}”
               </p>
-              <div className="mt-8 flex items-center justify-center gap-1">
-                {Array.from({ length: 5 }).map((_, n) => (
-                  <Star key={n} className="h-4 w-4 fill-gold text-gold" />
-                ))}
-              </div>
-              <p className="mt-6 font-medium text-ivory">{t.name}</p>
-              <p className="text-sm text-ivory/60">{t.role}</p>
+              <p className="mt-8 font-medium text-ivory">— {t.project}</p>
             </motion.div>
           </AnimatePresence>
         </div>

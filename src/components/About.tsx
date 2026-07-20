@@ -30,12 +30,12 @@ export default function About() {
             {/* Two mini-stats */}
             <div className="grid grid-cols-2 gap-4">
               <div className="rounded-2xl border border-gold/20 bg-white/50 p-6 hover-lift">
-                <p className="font-display text-4xl text-gradient-gold leading-none">420+</p>
+                <p className="font-display text-4xl text-gradient-gold leading-none">160+</p>
                 <p className="mt-2 text-xs text-charcoal/55 uppercase tracking-wider">Projects Delivered</p>
               </div>
               <div className="rounded-2xl border border-gold/20 bg-white/50 p-6 hover-lift">
-                <p className="font-display text-4xl text-gradient-gold leading-none">180+</p>
-                <p className="mt-2 text-xs text-charcoal/55 uppercase tracking-wider">Machine Fleet</p>
+                <p className="font-display text-4xl text-gradient-gold leading-none">80+</p>
+                <p className="mt-2 text-xs text-charcoal/55 uppercase tracking-wider">Skilled Labourers</p>
               </div>
             </div>
 
@@ -44,10 +44,10 @@ export default function About() {
               <p className="text-[10px] uppercase tracking-[0.3em] text-gold-deep mb-3 font-medium">Certifications &amp; Compliance</p>
               <div className="flex flex-col gap-2">
                 {[
-                  "ISO 9001:2015 Certified",
                   "Government Class-A Registered",
-                  "HSE Protocol Compliant",
-                  "LEED Aligned Practices",
+                  "PWD Approved Contractor",
+                  "14+ Years of Industry Experience",
+                  "160+ Projects Delivered",
                 ].map((b) => (
                   <div key={b} className="flex items-center gap-2.5">
                     <CheckCircle2 className="h-4 w-4 text-gold shrink-0" />
@@ -78,7 +78,7 @@ export default function About() {
             <p className="mt-4 text-base sm:text-lg text-charcoal/70 leading-relaxed">
               Founded with a vision to deliver world-class construction services, Skandha Constructions
               has grown into one of the region&apos;s most trusted names in civil and structural
-              construction, backed by a 180+ strong fleet of earth-moving machinery.
+              construction, backed by a skilled team of 12 engineers and 80+ labourers.
             </p>
             <p className="mt-4 text-sm text-charcoal/60 leading-relaxed">
               Our work spans government infrastructure, private developments, and large-scale
@@ -94,12 +94,12 @@ export default function About() {
                   desc: "Senior structural engineers on every project, with rigorous QA gates.",
                 },
                 {
-                  title: "Fleet at Scale",
-                  desc: "180+ heavy machines, 24/7 maintenance and certified operators.",
+                  title: "Skilled Workforce",
+                  desc: "12 in-house engineers and 80+ skilled labourers on every project.",
                 },
                 {
                   title: "Compliance First",
-                  desc: "ISO certified, government Class-A registered, full HSE protocols.",
+                  desc: "Government Class-A registered contractor for public and private works.",
                 },
                 {
                   title: "On-Time Delivery",
