@@ -101,7 +101,7 @@ export default function Chatbot() {
       <button
         onClick={() => setOpen((v) => !v)}
         aria-label="Toggle chat"
-        className="fixed bottom-6 right-6 z-50 h-14 w-14 rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 hover:scale-110"
+        className="fixed bottom-6 right-6 z-60 h-14 w-14 rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 hover:scale-110"
         style={{ backgroundColor: "#2d5a16" }}
       >
         {open ? (
@@ -114,12 +114,12 @@ export default function Chatbot() {
       {/* Chat panel */}
       {open && (
         <div
-          className="fixed bottom-24 right-6 z-50 w-[340px] sm:w-[380px] rounded-2xl shadow-2xl overflow-hidden flex flex-col border border-green-200"
+          className="fixed bottom-24 right-6 z-60 w-85 sm:w-95 rounded-2xl shadow-2xl overflow-hidden flex flex-col border border-green-200"
           style={{ height: "480px", backgroundColor: "#fff" }}
         >
           {/* Header */}
           <div
-            className="px-5 py-4 flex items-center gap-3 flex-shrink-0"
+            className="px-5 py-4 flex items-center gap-3 shrink-0"
             style={{ backgroundColor: "#2d5a16" }}
           >
             <div
@@ -178,7 +178,7 @@ export default function Chatbot() {
           </div>
 
           {/* Input */}
-          <div className="border-t border-gray-200 bg-white px-3 py-3 flex items-center gap-2 flex-shrink-0">
+          <div className="border-t border-gray-200 bg-white px-3 py-3 flex items-center gap-2 shrink-0">
             <input
               type="text"
               value={input}

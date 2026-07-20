@@ -68,6 +68,11 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
   overflow-x: hidden;
+  /* NO animation here — transform on body breaks position:fixed children */
+}
+
+/* Page reveal goes on the inner content wrapper, not body */
+.page-content {
   animation: pageReveal 0.55s var(--ease-out-quart) both;
 }
 

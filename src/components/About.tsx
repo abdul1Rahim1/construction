@@ -1,8 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, CheckCircle2 } from "lucide-react";
 
 export default function About() {
   return (
@@ -10,30 +9,56 @@ export default function About() {
       <div className="absolute -left-40 top-1/3 h-96 w-96 rounded-full bg-gold/10 blur-3xl -z-10" />
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+
+          {/* Left: Credentials panel — replaces stock founder photo */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.7 }}
-            className="relative"
+            className="flex flex-col gap-5"
           >
-            <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] border border-gold/20 shadow-2xl">
-              <Image
-                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80"
-                alt="Karuppusamy Udhayakumar — Founder, Skandha Constructions"
-                fill
-                className="object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-charcoal/40 to-transparent" />
-            </div>
-            <div className="absolute -bottom-8 -right-4 sm:-right-12 glass rounded-2xl p-6 shadow-2xl max-w-xs">
-              <p className="font-display text-4xl text-gradient-gold">14+</p>
-              <p className="text-sm text-charcoal/70 mt-1">
-                Years of excellence in civil &amp; structural construction.
+            {/* Hero stat */}
+            <div className="bg-gradient-wine rounded-3xl p-8 text-ivory shadow-2xl">
+              <p className="font-display text-8xl sm:text-9xl leading-none text-white/90">14+</p>
+              <p className="mt-2 text-white/60 text-xs uppercase tracking-[0.3em] font-medium">Years of Excellence</p>
+              <p className="mt-4 text-white/75 text-sm leading-relaxed max-w-xs">
+                From foundations to final finishing — every project delivered with engineering precision and on-time accountability.
               </p>
+            </div>
+
+            {/* Two mini-stats */}
+            <div className="grid grid-cols-2 gap-4">
+              <div className="rounded-2xl border border-gold/20 bg-white/50 p-6 hover-lift">
+                <p className="font-display text-4xl text-gradient-gold leading-none">420+</p>
+                <p className="mt-2 text-xs text-charcoal/55 uppercase tracking-wider">Projects Delivered</p>
+              </div>
+              <div className="rounded-2xl border border-gold/20 bg-white/50 p-6 hover-lift">
+                <p className="font-display text-4xl text-gradient-gold leading-none">180+</p>
+                <p className="mt-2 text-xs text-charcoal/55 uppercase tracking-wider">Machine Fleet</p>
+              </div>
+            </div>
+
+            {/* Credential badges */}
+            <div className="rounded-2xl border border-gold/15 bg-white/40 p-5">
+              <p className="text-[10px] uppercase tracking-[0.3em] text-gold-deep mb-3 font-medium">Certifications &amp; Compliance</p>
+              <div className="flex flex-col gap-2">
+                {[
+                  "ISO 9001:2015 Certified",
+                  "Government Class-A Registered",
+                  "HSE Protocol Compliant",
+                  "LEED Aligned Practices",
+                ].map((b) => (
+                  <div key={b} className="flex items-center gap-2.5">
+                    <CheckCircle2 className="h-4 w-4 text-gold shrink-0" />
+                    <span className="text-sm text-charcoal/70 font-medium">{b}</span>
+                  </div>
+                ))}
+              </div>
             </div>
           </motion.div>
 
+          {/* Right: Story + feature cards */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
