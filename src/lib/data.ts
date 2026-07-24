@@ -48,8 +48,8 @@ export const PROJECTS: Project[] = [
     category: "Private",
     location: "Coimbatore, Tamil Nadu",
     year: "2023",
-    image: "/images/prayer_rooms/prayer13.jpeg",
-    hero: "/images/prayer_rooms/prayer13.jpeg",
+    image: "https://images.pexels.com/photos/33852660/pexels-photo-33852660.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    hero: "https://images.pexels.com/photos/33852660/pexels-photo-33852660.jpeg?auto=compress&cs=tinysrgb&w=2400",
     tagline:
       "A landmark marriage hall built for grand celebrations, delivered with precision engineering and premium finishing.",
     client: "Private Client",
@@ -71,9 +71,9 @@ export const PROJECTS: Project[] = [
       "Delivered on schedule with zero safety incidents",
     ],
     gallery: [
-      "/images/prayer_rooms/prayer12.jpeg",
-      "/images/prayer_rooms/prayer11.jpeg",
-      "/images/prayer_rooms/prayer10.jpeg",
+      "https://images.pexels.com/photos/19351562/pexels-photo-19351562.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "https://images.pexels.com/photos/34597461/pexels-photo-34597461.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "https://images.pexels.com/photos/17023110/pexels-photo-17023110.jpeg?auto=compress&cs=tinysrgb&w=1600",
     ],
     metrics: [
       { label: "Guest Capacity", value: "1,200+" },
@@ -93,8 +93,8 @@ export const PROJECTS: Project[] = [
     category: "Private",
     location: "Coimbatore, Tamil Nadu",
     year: "2022",
-    image: "/images/prayer_rooms/prayer9.jpeg",
-    hero: "/images/prayer_rooms/prayer9.jpeg",
+    image: "https://images.pexels.com/photos/17206153/pexels-photo-17206153.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    hero: "https://images.pexels.com/photos/17206153/pexels-photo-17206153.jpeg?auto=compress&cs=tinysrgb&w=2400",
     tagline:
       "A traditional kalyana mandapam reimagined with modern structural planning and timeless finishing.",
     client: "Private Client",
@@ -116,9 +116,9 @@ export const PROJECTS: Project[] = [
       "Completed ahead of wedding season",
     ],
     gallery: [
-      "/images/prayer_rooms/prayer8.jpeg",
-      "/images/prayer_rooms/prayer7.jpeg",
-      "/images/prayer_rooms/prayer6.jpeg",
+      "https://images.pexels.com/photos/16043728/pexels-photo-16043728.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "https://images.pexels.com/photos/27333845/pexels-photo-27333845.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "https://images.pexels.com/photos/17057001/pexels-photo-17057001.jpeg?auto=compress&cs=tinysrgb&w=1600",
     ],
     metrics: [
       { label: "Guest Capacity", value: "900+" },
@@ -136,10 +136,10 @@ export const PROJECTS: Project[] = [
     slug: "valliyammal-mahal",
     title: "Valliyammal Mahal",
     category: "Private",
-    location: "Coimbatore, Tamil Nadu",
+    location: "Pollachi, Tamil Nadu",
     year: "2024",
-    image: "/images/prayer_rooms/prayer5.jpeg",
-    hero: "/images/prayer_rooms/prayer5.jpeg",
+    image: "https://images.pexels.com/photos/17606660/pexels-photo-17606660.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    hero: "https://images.pexels.com/photos/17606660/pexels-photo-17606660.jpeg?auto=compress&cs=tinysrgb&w=2400",
     tagline:
       "A community marriage hall delivering dependable quality and comfort for families across the region.",
     client: "Private Client",
@@ -161,9 +161,9 @@ export const PROJECTS: Project[] = [
       "Close engineering supervision throughout construction",
     ],
     gallery: [
-      "/images/prayer_rooms/prayer4.jpeg",
-      "/images/prayer_rooms/prayer13.jpeg",
-      "/images/prayer_rooms/prayer9.jpeg",
+      "https://images.pexels.com/photos/28976220/pexels-photo-28976220.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "https://images.pexels.com/photos/28976226/pexels-photo-28976226.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "https://images.pexels.com/photos/19351562/pexels-photo-19351562.jpeg?auto=compress&cs=tinysrgb&w=1600",
     ],
     metrics: [
       { label: "Guest Capacity", value: "1,000+" },
@@ -174,7 +174,7 @@ export const PROJECTS: Project[] = [
     quote: {
       text: "The entire construction process was managed professionally with dependable quality and timely handover.",
       author: "Valliyammal Mahal",
-      role: "Marriage Hall · Coimbatore",
+      role: "Marriage Hall · Pollachi",
     },
   },
   {
@@ -486,6 +486,38 @@ export const COMMERCIAL_PROJECTS: PortfolioProject[] = [
     type: "IT Park",
     status: "Completed",
     image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80",
+  },
+  {
+    id: 7,
+    name: "Minnal M Mahal",
+    location: "Coimbatore, Tamil Nadu",
+    type: "Marriage Hall & Banquet Venue",
+    status: "Completed",
+    image: "https://images.pexels.com/photos/33852660/pexels-photo-33852660.jpeg?auto=compress&cs=tinysrgb&w=800",
+  },
+  {
+    id: 8,
+    name: "Thangasaras Kalyana Mandapam",
+    location: "Coimbatore, Tamil Nadu",
+    type: "Kalyana Mandapam",
+    status: "Completed",
+    image: "https://images.pexels.com/photos/17206153/pexels-photo-17206153.jpeg?auto=compress&cs=tinysrgb&w=800",
+  },
+  {
+    id: 9,
+    name: "Valliyammal Mahal",
+    location: "Pollachi, Tamil Nadu",
+    type: "Community Marriage Hall",
+    status: "Completed",
+    image: "https://images.pexels.com/photos/17606660/pexels-photo-17606660.jpeg?auto=compress&cs=tinysrgb&w=800",
+  },
+  {
+    id: 10,
+    name: "ITC WelcomHotel",
+    location: "Coimbatore, Tamil Nadu",
+    type: "5-Star Hospitality",
+    status: "Completed",
+    image: "https://images.pexels.com/photos/10902408/pexels-photo-10902408.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
 ];
 
