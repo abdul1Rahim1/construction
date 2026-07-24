@@ -3,7 +3,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
-import { MapPin, Clock, CheckCircle, ArrowUpRight } from "lucide-react";
+import { Clock, CheckCircle, ArrowUpRight } from "lucide-react";
 import { RESIDENTIAL_PROJECTS, COMMERCIAL_PROJECTS, type PortfolioStatus } from "@/lib/data";
 
 type TabType = "Residential" | "Commercial";
@@ -114,12 +114,7 @@ export default function Projects() {
                   {/* Info overlay */}
                   <div className="absolute bottom-0 left-0 right-0 p-5 text-ivory">
                     <h3 className="font-display text-xl sm:text-2xl leading-tight">{p.name}</h3>
-                    <div className="mt-1.5 flex items-center gap-3 text-xs text-ivory/70">
-                      <span className="inline-flex items-center gap-1">
-                        <MapPin className="h-3 w-3 text-gold-2" /> {p.location}
-                      </span>
-                    </div>
-                    <p className="mt-1 text-xs text-ivory/55">{p.type}</p>
+                    <p className="mt-1.5 text-xs text-ivory/55">{p.type}</p>
                   </div>
                 </div>
               </motion.div>

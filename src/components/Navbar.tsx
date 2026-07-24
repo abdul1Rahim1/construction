@@ -64,18 +64,6 @@ export default function Navbar() {
             ))}
           </nav>
 
-          {/* Right-side CTA — right column */}
-          <div className="hidden lg:flex items-center gap-4 justify-end">
-            {/* CTA button */}
-            <a
-              href="#contact"
-              className="shine group inline-flex items-center gap-2 rounded-full bg-charcoal px-6 py-3 text-sm font-semibold text-ivory hover:bg-graphite hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200 shadow-lg shadow-charcoal/25"
-            >
-              Request a Quote
-              <span className="h-2 w-2 rounded-full bg-gold-2 group-hover:scale-125 transition-transform duration-200" />
-            </a>
-          </div>
-
           {/* Mobile hamburger — right column on small screens */}
           <button
             aria-label="Toggle menu"
@@ -107,14 +95,6 @@ export default function Navbar() {
                     {l.label}
                   </a>
                 ))}
-                <a
-                  href="#contact"
-                  onClick={() => setOpen(false)}
-                  className="mt-2 inline-flex justify-center items-center gap-2 rounded-full bg-charcoal px-5 py-3 text-sm font-semibold text-ivory shadow-lg"
-                >
-                  Request a Quote
-                  <span className="h-1.5 w-1.5 rounded-full bg-gold-2" />
-                </a>
               </nav>
             </motion.div>
           )}
