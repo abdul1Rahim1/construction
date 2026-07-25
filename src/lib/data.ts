@@ -399,7 +399,7 @@ export const RESIDENTIAL_PROJECTS: PortfolioProject[] = [
   {
     id: 2,
     name: "Green Valley Apartments",
-    location: "Chennai, Tamil Nadu",
+    location: "Coimbatore, Tamil Nadu",
     type: "Apartment Complex",
     status: "Ongoing",
     image: "https://images.pexels.com/photos/1463917/pexels-photo-1463917.jpeg?auto=compress&cs=tinysrgb&w=800",
@@ -407,7 +407,7 @@ export const RESIDENTIAL_PROJECTS: PortfolioProject[] = [
   {
     id: 3,
     name: "Lakeside Homes Phase 1",
-    location: "Salem, Tamil Nadu",
+    location: "Pollachi, Tamil Nadu",
     type: "Row Houses",
     status: "Completed",
     image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
@@ -415,7 +415,7 @@ export const RESIDENTIAL_PROJECTS: PortfolioProject[] = [
   {
     id: 4,
     name: "Sunrise Residency",
-    location: "Madurai, Tamil Nadu",
+    location: "Palladam, Tamil Nadu",
     type: "Multi-Storey Apartments",
     status: "Ongoing",
     image: "https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?auto=format&fit=crop&w=800&q=80",
@@ -423,7 +423,7 @@ export const RESIDENTIAL_PROJECTS: PortfolioProject[] = [
   {
     id: 5,
     name: "Palm Garden Phase 2",
-    location: "Erode, Tamil Nadu",
+    location: "Pollachi, Tamil Nadu",
     type: "Gated Community Villas",
     status: "Ongoing",
     image: "https://images.pexels.com/photos/27907084/pexels-photo-27907084.jpeg?auto=compress&cs=tinysrgb&w=800",
@@ -431,7 +431,7 @@ export const RESIDENTIAL_PROJECTS: PortfolioProject[] = [
   {
     id: 6,
     name: "Elite Towers",
-    location: "Trichy, Tamil Nadu",
+    location: "Coimbatore, Tamil Nadu",
     type: "High-Rise Apartments",
     status: "Completed",
     image: "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?auto=format&fit=crop&w=800&q=80",
@@ -439,56 +439,9 @@ export const RESIDENTIAL_PROJECTS: PortfolioProject[] = [
 ];
 
 export const COMMERCIAL_PROJECTS: PortfolioProject[] = [
+  // Real, priority projects — shown first
   {
     id: 1,
-    name: "Coimbatore Tech Hub",
-    location: "Coimbatore, Tamil Nadu",
-    type: "IT Office Complex",
-    status: "Completed",
-    image: "https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=800&q=80",
-  },
-  {
-    id: 2,
-    name: "Chennai Business Centre",
-    location: "Chennai, Tamil Nadu",
-    type: "Commercial Complex",
-    status: "Ongoing",
-    image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=800&q=80",
-  },
-  {
-    id: 3,
-    name: "Trichy Trade Tower",
-    location: "Trichy, Tamil Nadu",
-    type: "Office Tower",
-    status: "Completed",
-    image: "https://images.unsplash.com/photo-1464082354059-27db6ce50048?auto=format&fit=crop&w=800&q=80",
-  },
-  {
-    id: 4,
-    name: "Salem Mall Complex",
-    location: "Salem, Tamil Nadu",
-    type: "Retail & Mall",
-    status: "Ongoing",
-    image: "https://images.pexels.com/photos/12335028/pexels-photo-12335028.jpeg?auto=compress&cs=tinysrgb&w=800",
-  },
-  {
-    id: 5,
-    name: "Hosur Industrial Park",
-    location: "Hosur, Tamil Nadu",
-    type: "Industrial Warehouse",
-    status: "Completed",
-    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80",
-  },
-  {
-    id: 6,
-    name: "Bangalore IT Park Phase 1",
-    location: "Bangalore, Karnataka",
-    type: "IT Park",
-    status: "Completed",
-    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80",
-  },
-  {
-    id: 7,
     name: "Minnal M Mahal",
     location: "Coimbatore, Tamil Nadu",
     type: "Marriage Hall & Banquet Venue",
@@ -496,7 +449,7 @@ export const COMMERCIAL_PROJECTS: PortfolioProject[] = [
     image: "https://images.pexels.com/photos/33852660/pexels-photo-33852660.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
-    id: 8,
+    id: 2,
     name: "Thangasaras Kalyana Mandapam",
     location: "Coimbatore, Tamil Nadu",
     type: "Kalyana Mandapam",
@@ -504,7 +457,7 @@ export const COMMERCIAL_PROJECTS: PortfolioProject[] = [
     image: "https://images.pexels.com/photos/17206153/pexels-photo-17206153.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
-    id: 9,
+    id: 3,
     name: "Valliyammal Mahal",
     location: "Pollachi, Tamil Nadu",
     type: "Community Marriage Hall",
@@ -512,12 +465,60 @@ export const COMMERCIAL_PROJECTS: PortfolioProject[] = [
     image: "https://images.pexels.com/photos/17606660/pexels-photo-17606660.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
-    id: 10,
+    id: 4,
     name: "ITC WelcomHotel",
     location: "Coimbatore, Tamil Nadu",
     type: "5-Star Hospitality",
     status: "Completed",
     image: "https://images.pexels.com/photos/10902408/pexels-photo-10902408.jpeg?auto=compress&cs=tinysrgb&w=800",
+  },
+  {
+    id: 5,
+    name: "Coimbatore Tech Hub",
+    location: "Coimbatore, Tamil Nadu",
+    type: "IT Office Complex",
+    status: "Completed",
+    image: "https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=800&q=80",
+  },
+  {
+    id: 6,
+    name: "Palladam Business Centre",
+    location: "Palladam, Tamil Nadu",
+    type: "Commercial Complex",
+    status: "Ongoing",
+    image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=800&q=80",
+  },
+  {
+    id: 7,
+    name: "Pollachi Trade Tower",
+    location: "Pollachi, Tamil Nadu",
+    type: "Office Tower",
+    status: "Completed",
+    image: "https://images.unsplash.com/photo-1464082354059-27db6ce50048?auto=format&fit=crop&w=800&q=80",
+  },
+  {
+    id: 8,
+    name: "Palladam Mall Complex",
+    location: "Palladam, Tamil Nadu",
+    type: "Retail & Mall",
+    status: "Ongoing",
+    image: "https://images.pexels.com/photos/12335028/pexels-photo-12335028.jpeg?auto=compress&cs=tinysrgb&w=800",
+  },
+  {
+    id: 9,
+    name: "Pollachi Industrial Park",
+    location: "Pollachi, Tamil Nadu",
+    type: "Industrial Warehouse",
+    status: "Completed",
+    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80",
+  },
+  {
+    id: 10,
+    name: "Coimbatore IT Park Phase 1",
+    location: "Coimbatore, Tamil Nadu",
+    type: "IT Park",
+    status: "Completed",
+    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80",
   },
 ];
 
