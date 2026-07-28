@@ -5,9 +5,9 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, ChevronLeft, ChevronRight, ZoomIn } from "lucide-react";
 
-type Category = "All" | "Bedrooms" | "Kitchens" | "Cupboards" | "Prayer Rooms" | "Marriage Halls";
+type Category = "All" | "Bedrooms" | "Kitchens" | "Cupboards" | "Prayer Rooms" | "Marriage Halls" | "Hospitality";
 
-const CATEGORIES: Category[] = ["All", "Bedrooms", "Kitchens", "Cupboards", "Prayer Rooms", "Marriage Halls"];
+const CATEGORIES: Category[] = ["All", "Bedrooms", "Kitchens", "Cupboards", "Prayer Rooms", "Marriage Halls", "Hospitality"];
 
 type GalleryItem = { src: string; alt: string; category: Exclude<Category, "All"> };
 
@@ -71,19 +71,22 @@ const GALLERY_ITEMS: GalleryItem[] = [
   { src: "/images/prayer_rooms/prayer11.jpeg", alt: "Prayer room", category: "Prayer Rooms" },
   { src: "/images/prayer_rooms/prayer12.jpeg", alt: "Prayer room", category: "Prayer Rooms" },
   { src: "/images/prayer_rooms/prayer13.jpeg", alt: "Prayer room", category: "Prayer Rooms" },
+  { src: "/images/minnal_mahal/minnal-temple1.jpeg", alt: "Temple at Minnal M Mahal", category: "Prayer Rooms" },
+  { src: "/images/minnal_mahal/minnal-temple2.jpeg", alt: "Temple shrine at Minnal M Mahal", category: "Prayer Rooms" },
 
-  // Marriage Halls
-  { src: "https://images.pexels.com/photos/33852660/pexels-photo-33852660.jpeg?auto=compress&cs=tinysrgb&w=800", alt: "Elegant banquet hall at Minnal M Mahal", category: "Marriage Halls" },
-  { src: "https://images.pexels.com/photos/19351562/pexels-photo-19351562.jpeg?auto=compress&cs=tinysrgb&w=800", alt: "Wedding table decoration at Minnal M Mahal", category: "Marriage Halls" },
-  { src: "https://images.pexels.com/photos/34597461/pexels-photo-34597461.jpeg?auto=compress&cs=tinysrgb&w=800", alt: "Reception table setting at Minnal M Mahal", category: "Marriage Halls" },
-  { src: "https://images.pexels.com/photos/17023110/pexels-photo-17023110.jpeg?auto=compress&cs=tinysrgb&w=800", alt: "Flower-decorated stairway at Minnal M Mahal", category: "Marriage Halls" },
-  { src: "https://images.pexels.com/photos/17206153/pexels-photo-17206153.jpeg?auto=compress&cs=tinysrgb&w=800", alt: "Wedding reception hall at Thangasaras Kalyana Mandapam", category: "Marriage Halls" },
-  { src: "https://images.pexels.com/photos/16043728/pexels-photo-16043728.jpeg?auto=compress&cs=tinysrgb&w=800", alt: "Chandelier and floral decor at Thangasaras Kalyana Mandapam", category: "Marriage Halls" },
-  { src: "https://images.pexels.com/photos/27333845/pexels-photo-27333845.jpeg?auto=compress&cs=tinysrgb&w=800", alt: "Decorated wedding gate at Thangasaras Kalyana Mandapam", category: "Marriage Halls" },
-  { src: "https://images.pexels.com/photos/17057001/pexels-photo-17057001.jpeg?auto=compress&cs=tinysrgb&w=800", alt: "Spacious banquet hall at Thangasaras Kalyana Mandapam", category: "Marriage Halls" },
-  { src: "https://images.pexels.com/photos/17606660/pexels-photo-17606660.jpeg?auto=compress&cs=tinysrgb&w=800", alt: "Interior of Valliyammal Mahal banquet hall", category: "Marriage Halls" },
-  { src: "https://images.pexels.com/photos/28976220/pexels-photo-28976220.jpeg?auto=compress&cs=tinysrgb&w=800", alt: "Reception table setup at Valliyammal Mahal", category: "Marriage Halls" },
-  { src: "https://images.pexels.com/photos/28976226/pexels-photo-28976226.jpeg?auto=compress&cs=tinysrgb&w=800", alt: "Evening reception setup at Valliyammal Mahal", category: "Marriage Halls" },
+  // Marriage Halls — Minnal M Mahal
+  { src: "/images/minnal_mahal/minnal-ceiling.jpeg", alt: "Ceiling design at Minnal M Mahal banquet hall", category: "Marriage Halls" },
+  { src: "/images/minnal_mahal/minnal-lobby.jpeg", alt: "Lobby at Minnal M Mahal", category: "Marriage Halls" },
+  { src: "/images/minnal_mahal/minnal-hall.jpeg", alt: "Main hall at Minnal M Mahal", category: "Marriage Halls" },
+  { src: "/images/minnal_mahal/minnal-entrance.jpeg", alt: "Entrance corridor at Minnal M Mahal", category: "Marriage Halls" },
+  { src: "/images/minnal_mahal/minnal-corridor.jpeg", alt: "Wood-panelled corridor at Minnal M Mahal", category: "Marriage Halls" },
+  { src: "/images/minnal_mahal/minnal-walkway.jpeg", alt: "Lit walkway at Minnal M Mahal", category: "Marriage Halls" },
+  { src: "/images/minnal_mahal/minnal-lights.jpeg", alt: "Illuminated entrance walkway at Minnal M Mahal", category: "Marriage Halls" },
+
+  // Hospitality — ITC WelcomHotel
+  { src: "/images/itc_welcomhotel/itc-exterior.jpeg", alt: "Exterior of ITC WelcomHotel", category: "Hospitality" },
+  { src: "/images/itc_welcomhotel/itc-aerial.jpeg", alt: "Aerial view of ITC WelcomHotel at dusk", category: "Hospitality" },
+  { src: "/images/itc_welcomhotel/itc-corridor.jpeg", alt: "Guest room corridor at ITC WelcomHotel", category: "Hospitality" },
 ];
 
 export default function Gallery() {
@@ -121,8 +124,8 @@ export default function Gallery() {
             </h2>
             <p className="mt-4 text-charcoal/65 max-w-xl leading-relaxed">
               Every space we design and build reflects our commitment to quality — from
-              fitted kitchens and bespoke cupboards to serene bedrooms, dedicated prayer rooms
-              and grand marriage halls.
+              fitted kitchens and bespoke cupboards to serene bedrooms, dedicated prayer rooms,
+              grand marriage halls and premium hospitality.
             </p>
           </div>
 
