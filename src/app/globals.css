@@ -8,8 +8,8 @@
   --gold: #4a7c2a;
   --gold-2: #9ec468;
   --gold-deep: #2d5a16;
-  --charcoal: #2d5a16;
-  --graphite: #1c3c0e;
+  --charcoal: #163208;
+  --graphite: #0f2405;
   --muted: #607848;
 
   /* Easing presets */
@@ -98,7 +98,7 @@ body {
 }
 
 .text-gradient-gold {
-  background: linear-gradient(135deg, #6ba038 0%, #4a7c2a 50%, #2d5a16 100%);
+  background: linear-gradient(135deg, #4a7c2a 0%, #2d5a16 50%, #163208 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
