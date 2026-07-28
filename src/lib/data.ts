@@ -444,6 +444,12 @@ export const COMMERCIAL_PROJECTS: PortfolioProject[] = [
 export type ProgressPhoto = { src: string; alt: string };
 
 export const CONSTRUCTION_PROGRESS_GALLERY: ProgressPhoto[] = [
+  { src: "/images/construction_progress/progress1.jpeg", alt: "Small building under construction with brick and RCC framing" },
+  { src: "/images/construction_progress/progress3.jpeg", alt: "Combined footing concrete work at a small building site" },
+  { src: "/images/construction_progress/progress5.png", alt: "Workers plastering a small house on bamboo scaffolding" },
+  { src: "/images/construction_progress/progress6.png", alt: "Small house facade under construction with bamboo scaffolding" },
+  { src: "/images/construction_progress/progress2.jpeg", alt: "Small house nearing completion with worker on the terrace" },
+  { src: "/images/construction_progress/progress4.png", alt: "Completed small house with gated compound" },
   { src: "https://images.pexels.com/photos/20339280/pexels-photo-20339280.jpeg?auto=compress&cs=tinysrgb&w=800", alt: "Rebar reinforcement mesh laid across a foundation slab" },
   { src: "https://images.pexels.com/photos/14422688/pexels-photo-14422688.jpeg?auto=compress&cs=tinysrgb&w=800", alt: "Worker carrying cement at a small building construction site in India" },
   { src: "https://images.pexels.com/photos/16468074/pexels-photo-16468074.jpeg?auto=compress&cs=tinysrgb&w=800", alt: "Worker laying bricks at a small house construction site" },
