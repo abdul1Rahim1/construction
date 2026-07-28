@@ -31,7 +31,7 @@ export default function DiyaDev() {
               alt="DiyaDev Developers"
               width={1910}
               height={823}
-              className="h-20 sm:h-24 lg:h-28 w-auto"
+              className="h-28 sm:h-36 lg:h-44 w-auto"
               priority
             />
           </div>
