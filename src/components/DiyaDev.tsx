@@ -1,6 +1,7 @@
 ﻿"use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function DiyaDev() {
   return (
@@ -24,16 +25,15 @@ export default function DiyaDev() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <div className="inline-flex items-center gap-1 mb-5">
-            <span className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold" style={{ color: "#f5a623" }}>
-              Diya
-            </span>
-            <span className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold" style={{ color: "#1a4b8c" }}>
-              Dev
-            </span>
-            <span className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-700 ml-2">
-              Developers
-            </span>
+          <div className="flex justify-center mb-5">
+            <Image
+              src="/images/diyadev/diyadev-logo.png"
+              alt="DiyaDev Developers"
+              width={1910}
+              height={823}
+              className="h-20 sm:h-24 lg:h-28 w-auto"
+              priority
+            />
           </div>
 
           <div className="flex items-center justify-center gap-3 mb-5">
