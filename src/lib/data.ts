@@ -402,7 +402,23 @@ export const RESIDENTIAL_PROJECTS: PortfolioProject[] = [
     location: "Palladam, Tamil Nadu",
     type: "Multi-Storey Apartments",
     status: "Ongoing",
-    image: "https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.pexels.com/photos/31865990/pexels-photo-31865990.jpeg?auto=compress&cs=tinysrgb&w=800",
+  },
+  {
+    id: 3,
+    name: "Independent House Construction",
+    location: "Coimbatore, Tamil Nadu",
+    type: "Independent House",
+    status: "Ongoing",
+    image: "/images/ongoing_projects/house2-front.jpeg",
+  },
+  {
+    id: 4,
+    name: "Residential Quarters",
+    location: "Coimbatore, Tamil Nadu",
+    type: "Row Houses",
+    status: "Ongoing",
+    image: "/images/ongoing_projects/quarters-night2.jpeg",
   },
 ];
 
@@ -439,11 +455,28 @@ export const COMMERCIAL_PROJECTS: PortfolioProject[] = [
     status: "Completed",
     image: "/images/itc_welcomhotel/itc-exterior.jpeg",
   },
+  {
+    id: 5,
+    name: "Industrial Shed Construction",
+    location: "Coimbatore, Tamil Nadu",
+    type: "Industrial Shed & Warehouse",
+    status: "Ongoing",
+    image: "/images/ongoing_projects/shed-aisle2.jpeg",
+  },
 ];
 
 export type ProgressPhoto = { src: string; alt: string };
 
 export const CONSTRUCTION_PROGRESS_GALLERY: ProgressPhoto[] = [
+  { src: "/images/ongoing_projects/house1-front.jpeg", alt: "Independent house under construction, RCC frame stage" },
+  { src: "/images/ongoing_projects/house1-side.jpeg", alt: "Independent house under construction, side view" },
+  { src: "/images/ongoing_projects/house2-side.jpeg", alt: "Independent house under construction with brick infill" },
+  { src: "/images/ongoing_projects/shed-aisle1.jpeg", alt: "Industrial shed construction, interior aisle" },
+  { src: "/images/ongoing_projects/quarters-night1.jpeg", alt: "Residential quarters under construction" },
+  { src: "/images/ongoing_projects/quarters-finished1.jpeg", alt: "Residential quarters nearing completion" },
+  { src: "/images/ongoing_projects/quarters-finished2.jpeg", alt: "Residential quarters nearing completion, wide view" },
+  { src: "/images/ongoing_projects/quarters-finished3.jpeg", alt: "Residential quarters nearing completion, evening view" },
+  { src: "/images/ongoing_projects/quarters-finished4.jpeg", alt: "Residential quarters nearing completion, corner view" },
   { src: "/images/construction_progress/progress1.jpeg", alt: "Small building under construction with brick and RCC framing" },
   { src: "/images/construction_progress/progress3.jpeg", alt: "Combined footing concrete work at a small building site" },
   { src: "/images/construction_progress/progress5.png", alt: "Workers plastering a small house on bamboo scaffolding" },
