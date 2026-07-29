@@ -463,6 +463,14 @@ export const COMMERCIAL_PROJECTS: PortfolioProject[] = [
     status: "Ongoing",
     image: "/images/ongoing_projects/shed-aisle2.jpeg",
   },
+  {
+    id: 6,
+    name: "Coimbatore Corporation School",
+    location: "Coimbatore, Tamil Nadu",
+    type: "Government School Building",
+    status: "Completed",
+    image: "/images/coimbatore_corporation_school/school-facade.jpeg",
+  },
 ];
 
 export type ProgressPhoto = { src: string; alt: string };
