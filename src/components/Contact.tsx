@@ -41,7 +41,7 @@ export default function Contact() {
           {[
             { icon: Phone, label: "Call us", value: "+91 98654 60607", href: "tel:+919865460607" },
             { icon: MessageCircle, label: "WhatsApp", value: "Chat with our team", href: "https://wa.me/919865460607" },
-            { icon: Mail, label: "Email", value: "skandhaconstructions@yahoo.com", href: "mailto:skandhaconstructions@yahoo.com" },
+            { icon: Mail, label: "Email", value: "support@skandhaconstructions.com", href: "mailto:support@skandhaconstructions.com" },
             { icon: MapPin, label: "Headquarters", value: "28, Siva Sakthi Colony, Kuruchi, SIDCO Post, Coimbatore, Tamil Nadu, 641021", href: "https://maps.google.com/?q=Coimbatore" },
           ].map((c) => (
             <a

@@ -494,8 +494,5 @@ export const CONSTRUCTION_PROGRESS_GALLERY: ProgressPhoto[] = [
   { src: "https://images.pexels.com/photos/20339280/pexels-photo-20339280.jpeg?auto=compress&cs=tinysrgb&w=800", alt: "Rebar reinforcement mesh laid across a foundation slab" },
   { src: "https://images.pexels.com/photos/14422688/pexels-photo-14422688.jpeg?auto=compress&cs=tinysrgb&w=800", alt: "Worker carrying cement at a small building construction site in India" },
   { src: "https://images.pexels.com/photos/16468074/pexels-photo-16468074.jpeg?auto=compress&cs=tinysrgb&w=800", alt: "Worker laying bricks at a small house construction site" },
-  { src: "https://images.pexels.com/photos/8293699/pexels-photo-8293699.jpeg?auto=compress&cs=tinysrgb&w=800", alt: "Construction worker checking a window of a small house" },
   { src: "https://images.pexels.com/photos/13890649/pexels-photo-13890649.jpeg?auto=compress&cs=tinysrgb&w=800", alt: "Workers on scaffolding at a small building construction site in India" },
-  { src: "https://images.pexels.com/photos/5493658/pexels-photo-5493658.jpeg?auto=compress&cs=tinysrgb&w=800", alt: "Construction worker plastering the wall of a small house" },
-  { src: "https://images.pexels.com/photos/5691637/pexels-photo-5691637.jpeg?auto=compress&cs=tinysrgb&w=800", alt: "Worker plastering an interior wall of a small house" },
 ];

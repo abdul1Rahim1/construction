@@ -67,7 +67,7 @@ function getResponse(input: string): string {
     return "DiyaDev Developers is our real estate arm! 🏠\n\nWe offer residential properties (2BHK, 3BHK, villas) and commercial spaces. Scroll to the DiyaDev section below or call +91 98654 60607 for current listings.";
 
   if (/contact|phone|call|whatsapp|number|address|email|location/i.test(msg))
-    return "📞 Call/WhatsApp: +91 98654 60607\n📧 Email: skandhaconstructions@yahoo.com\n📍 Address: 28, Siva Sakthi Colony, Kuruchi, SIDCO Post, Coimbatore, Tamil Nadu, 641021\n\n💬 WhatsApp chat: https://wa.me/919865460607";
+    return "📞 Call/WhatsApp: +91 98654 60607\n📧 Email: support@skandhaconstructions.com\n📍 Address: 28, Siva Sakthi Colony, Kuruchi, SIDCO Post, Coimbatore, Tamil Nadu, 641021\n\n💬 WhatsApp chat: https://wa.me/919865460607";
 
   if (/quote|price|cost|rate|estimate|charge|fee/i.test(msg))
     return "We provide custom quotes tailored to your project scope, timeline, and location. Please contact us directly at +91 98654 60607 or fill out the Contact form for a detailed estimate.";
